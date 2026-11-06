@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Something Fresh Is Growing | GreenRoots Producer Company</title>
+  <meta name="description" content="A new digital agricultural experience is coming soon from GreenRoots Producer Company. Direct farm-gate aggregation, verified quality, and wholesale trade.">
+  <meta property="og:title" content="Coming Soon | GreenRoots Producer Company">
+  <meta property="og:description" content="Something fresh is growing. Sign up for early access to the GreenRoots Producer Company platform.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/common/coming-soon-hero.jpg">
+  <link rel="icon" type="image/svg+xml" href="assets/img/common/favicon.svg">
+  <link rel="alternate icon" href="assets/img/common/favicon.ico">
+  <script>
+    (function(){
+      try {
+        var h = document.documentElement;
+        var t = localStorage.getItem('fpc-theme') || 'light';
+        var r = localStorage.getItem('fpc-dir') || 'ltr';
+        h.setAttribute('data-theme', t);
+        h.setAttribute('dir', r);
+        h.classList.add('js');
+        window.__rtl = r === 'rtl';
+      } catch(e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Playfair+Display:ital,wght@0,600..900;1,600..800&display=swap" rel="stylesheet">
+  <script>
+    document.write('<link id="bs-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap' + (window.__rtl ? '.rtl' : '') + '.min.css">');
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { corePlugins: { preflight: false } }</script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body data-page="coming-soon">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Top Utilities Bar -->
+  <div class="position-absolute top-0 end-0 p-3 z-3 d-flex gap-2">
+    <button class="icon-btn bg-white/20 text-white border-0 shadow" id="themeToggle" aria-label="Toggle light or dark theme"><i class="bi bi-moon-stars"></i></button>
+    <button class="icon-btn bg-white/20 text-white border-0 shadow" id="rtlToggle" aria-label="Toggle text direction RTL or LTR"><span>RTL</span></button>
+  </div>
+
+  <section class="soon position-relative overflow-hidden min-vh-100 d-flex align-items-center justify-content-center text-white" style="background-image: url('assets/img/common/coming-soon-hero.jpg'); --hero: url('assets/img/common/coming-soon-hero.jpg');">
+    <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/img/common/coming-soon-hero.jpg">
+      <source src="assets/videos/home-hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(180deg, rgba(17,45,26,0.85) 0%, rgba(13,32,19,0.92) 100%);"></div>
+
+    <div id="main" class="container text-center hero-copy position-relative z-2 py-5">
+      <!-- Animated Brand Logo -->
+      <a class="navbar-brand justify-content-center mb-4 text-white d-inline-flex align-items-center" href="index.html" aria-label="GreenRoots Producer Company">
+        <span class="brand-logo-wrap me-2">
+          <svg class="brand-logo-svg" viewBox="0 0 40 40" aria-hidden="true" style="width: 46px; height: 46px;">
+            <circle cx="20" cy="20" r="20" fill="#245C36"/>
+            <path d="M20 31V15M20 22c-5.5 0-8.5-3.5-8.5-8.5 5.5 0 8.5 3.5 8.5 8.5zM20 18c0-5.5 3.5-8.5 8.5-8.5 0 5.5-3.5 8.5-8.5 8.5z" stroke="#E4B94F" stroke-width="2.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="20" cy="13" r="1.8" fill="#E4B94F"/>
+          </svg>
+        </span>
+        <span class="brand-text text-start">
+          <span class="brand-title text-white fs-4 fw-bold d-block">GreenRoots</span>
+          <span class="brand-tagline text-warning small text-uppercase letter-spacing-1 d-block">Producer Company</span>
+        </span>
+      </a>
+
+      <h1 class="display-4 fw-bold text-white mb-3 anim-up">Something Fresh Is Growing!</h1>
+      <p class="lead text-white-50 mx-auto mb-5 anim-up d1" style="max-width: 680px;">We are finalizing our enhanced cooperative portal connecting 3,200+ smallholder growers with bulk institutional buyers, transparent digital weighment, and traceable single-origin commodities.</p>
+
+      <!-- Live Countdown Timer -->
+      <div class="countdown d-flex justify-content-center gap-3 gap-md-4 mb-5 anim-up d2" id="cd" data-date="2027-01-15T09:00:00">
+        <div class="p-3 px-4 rounded-4 bg-white/10 backdrop-blur border border-white/20 min-w-80">
+          <b id="cdD" class="display-5 fw-bold d-block text-warning">00</b>
+          <span class="small text-uppercase tracking-wider text-white-50">Days</span>
+        </div>
+        <div class="p-3 px-4 rounded-4 bg-white/10 backdrop-blur border border-white/20 min-w-80">
+          <b id="cdH" class="display-5 fw-bold d-block text-warning">00</b>
+          <span class="small text-uppercase tracking-wider text-white-50">Hours</span>
+        </div>
+        <div class="p-3 px-4 rounded-4 bg-white/10 backdrop-blur border border-white/20 min-w-80">
+          <b id="cdM" class="display-5 fw-bold d-block text-warning">00</b>
+          <span class="small text-uppercase tracking-wider text-white-50">Minutes</span>
+        </div>
+        <div class="p-3 px-4 rounded-4 bg-white/10 backdrop-blur border border-white/20 min-w-80">
+          <b id="cdS" class="display-5 fw-bold d-block text-warning">00</b>
+          <span class="small text-uppercase tracking-wider text-white-50">Seconds</span>
+        </div>
+      </div>
+
+      <!-- Early Access Newsletter Form -->
+      <div class="mx-auto mb-4" style="max-width: 500px;">
+        <form class="news-form" data-validate data-msg="Thank you! You are on our VIP launch list." novalidate>
+          <div class="input-group input-group-lg shadow-lg">
+            <input type="email" name="email" class="form-control" placeholder="Enter your email for early access" aria-label="Email address for launch notifications" required>
+            <button class="btn btn-accent px-4 fw-bold" type="submit">Notify Me</button>
+          </div>
+          <div class="invalid-feedback d-block-if text-start text-warning small mt-1"></div>
+        </form>
+      </div>
+
+      <!-- Quick Back Links -->
+      <div class="mb-4">
+        <a href="index.html" class="btn btn-link text-white text-decoration-none me-3"><i class="bi bi-arrow-left me-1"></i> Return to Current Website</a>
+        <a href="contact.html" class="btn btn-link text-white-50 text-decoration-none">Contact Us Directly</a>
+      </div>
+
+      <!-- Social Media Icons -->
+      <div class="social justify-content-center d-flex gap-3">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="text-white fs-4" aria-label="Visit GreenRoots on Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="text-white fs-4" aria-label="Visit GreenRoots on Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="text-white fs-4" aria-label="Watch GreenRoots on YouTube"><i class="bi bi-youtube"></i></a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-white fs-4" aria-label="Connect with GreenRoots on LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="text-white fs-4" aria-label="Follow GreenRoots on X"><i class="bi bi-twitter-x"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Notification Modal -->
+  <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-center p-4 border-0 shadow-lg">
+        <div class="ok-ring mx-auto mb-3"><i class="bi bi-check-lg fs-1 text-success"></i></div>
+        <h2 class="h4">Thank you!</h2>
+        <p id="successMsg" class="text-muted">You have been subscribed to our notification list.</p>
+        <button class="btn btn-fpc" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/validation.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

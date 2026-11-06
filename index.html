@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GreenRoots | Farmer Producer Company – Agricultural Overview</title>
+  <meta name="description" content="GreenRoots connects farmers with verified buyers for quality agricultural products, fair farm-gate prices, and sustainable rural development.">
+  <meta property="og:title" content="GreenRoots – Farmer Producer Company">
+  <meta property="og:description" content="Supporting farming communities through quality agricultural products, sustainable practices, and better market opportunities.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/home/hero-poster.jpg">
+  <link rel="icon" type="image/svg+xml" href="assets/img/common/favicon.svg">
+  <link rel="alternate icon" href="assets/img/common/favicon.ico">
+  <script>
+    (function(){
+      try {
+        var h = document.documentElement;
+        var t = localStorage.getItem('fpc-theme') || 'light';
+        var r = localStorage.getItem('fpc-dir') || 'ltr';
+        h.setAttribute('data-theme', t);
+        h.setAttribute('dir', r);
+        h.classList.add('js');
+        window.__rtl = r === 'rtl';
+      } catch(e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Playfair+Display:ital,wght@0,600..900;1,600..800&display=swap" rel="stylesheet">
+  <script>
+    document.write('<link id="bs-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap' + (window.__rtl ? '.rtl' : '') + '.min.css">');
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { corePlugins: { preflight: false } }</script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body data-page="index">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Header Navigation -->
+    <header class="site-header">
+    <nav class="navbar navbar-expand-xl container" aria-label="Main navigation">
+      <a class="navbar-brand" href="index.html" aria-label="GreenRoots Producer Company Home">
+        <span class="brand-logo-wrap">
+          <svg class="brand-logo-svg" viewBox="0 0 40 40" aria-hidden="true">
+            <circle cx="20" cy="20" r="20" fill="#245C36"/>
+            <path d="M20 31V15M20 22c-5.5 0-8.5-3.5-8.5-8.5 5.5 0 8.5 3.5 8.5 8.5zM20 18c0-5.5 3.5-8.5 8.5-8.5 0 5.5-3.5 8.5-8.5 8.5z" stroke="#E4B94F" stroke-width="2.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="20" cy="13" r="1.8" fill="#E4B94F"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-title">GreenRoots</span>
+          <span class="brand-tagline">Producer Company</span>
+        </span>
+      </a>
+
+      <div class="header-actions order-xl-last">
+        <button class="icon-btn d-none d-xl-inline-flex" id="themeToggle" aria-label="Toggle light or dark theme"><i class="bi bi-moon-stars"></i></button>
+        <button class="icon-btn d-none d-xl-inline-flex" id="rtlToggle" aria-label="Toggle text direction RTL or LTR"><span>RTL</span></button>
+        <a href="contact.html" class="btn btn-accent d-none d-xl-inline-flex">Get in Touch</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto align-items-xl-center text-center">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span>Home</span>
+              <i class="bi bi-chevron-down dd-icon" aria-hidden="true"></i>
+            </a>
+            <ul class="dropdown-menu fpc-dd">
+              <li><a class="dropdown-item active" href="index.html">Farming Excellence</a></li>
+              <li><a class="dropdown-item" href="home-2.html">Our Agricultural Story</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <!-- Mobile Menu Footer: Strictly ordered (1) Nav Links above, (2) Theme & RTL in 1 row, (3) CTA Button below -->
+        <div class="mobile-menu-footer d-xl-none text-center pt-3 pb-2 mt-2 border-top border-white-10">
+          <div class="mobile-controls d-flex justify-content-center align-items-center gap-3 mb-3">
+            <button class="btn btn-outline-secondary btn-sm mobile-theme-btn" id="mobileThemeToggle" type="button" aria-label="Toggle light or dark theme">
+              <i class="bi bi-moon-stars me-1"></i> <span class="theme-label">Theme</span>
+            </button>
+            <button class="btn btn-outline-secondary btn-sm mobile-rtl-btn" id="mobileRtlToggle" type="button" aria-label="Toggle text direction RTL or LTR">
+              <i class="bi bi-translate me-1"></i> <span class="rtl-label">RTL / LTR</span>
+            </button>
+          </div>
+          <div class="mobile-cta">
+            <a href="contact.html" class="btn btn-accent w-100">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Farming Excellence: Cinematic Agricultural Video Hero with Organic Curves -->
+    <section class="hero-full" style="background-image: url('assets/img/home/hero-poster.jpg')">
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/img/home/hero-poster.jpg">
+        <source src="assets/videos/home-hero.mp4" type="video/mp4">
+        <source src="assets/videos/home-hero.webm" type="video/webm">
+      </video>
+      <div class="hero-overlay"></div>
+
+      <!-- Animated floating leaf elements -->
+      <span class="leaf-decor leaf-1" aria-hidden="true"><i class="bi bi-flower1"></i></span>
+      <span class="leaf-decor leaf-2" aria-hidden="true"><i class="bi bi-tree"></i></span>
+      <span class="leaf-decor leaf-3" aria-hidden="true"><i class="bi bi-brightness-high"></i></span>
+
+      <div class="container">
+        <div class="hero-1-content">
+          <div class="hero-badge-pill anim-up">
+            <i class="bi bi-patch-check-fill text-warning"></i> GROWING TOGETHER, HARVESTING SUCCESS
+          </div>
+          <h1 class="anim-up d1">Growing Stronger Farmers, Building a Greener Tomorrow</h1>
+          <p class="lead anim-up d2">Supporting farming communities through quality agricultural products, sustainable practices, and better market opportunities.</p>
+          <div class="d-flex flex-wrap gap-3 anim-up d3">
+            <a href="products.html" class="btn btn-accent btn-lg"><i class="bi bi-basket2"></i> Explore Our Products</a>
+            <a href="membership.html" class="btn btn-outline-light btn-lg"><i class="bi bi-person-plus"></i> Become a Member</a>
+          </div>
+
+          <!-- Floating Agricultural Highlights -->
+          <div class="hero-stat-ribbon anim-up d3">
+            <div class="hero-stat-item">
+              <i class="bi bi-people"></i>
+              <div>
+                <strong>2,500+</strong>
+                <span>Member Farmers</span>
+              </div>
+            </div>
+            <div class="hero-stat-item">
+              <i class="bi bi-shield-check"></i>
+              <div>
+                <strong>100%</strong>
+                <span>Direct Farm Produce</span>
+              </div>
+            </div>
+            <div class="hero-stat-item">
+              <i class="bi bi-cash-stack"></i>
+              <div>
+                <strong>Fair Margin</strong>
+                <span>Transparent Mandi Rates</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Organic curved bottom mask -->
+      <div class="hero-curve-bottom" aria-hidden="true">
+        <svg viewBox="0 0 1440 65" preserveAspectRatio="none" width="100%" height="100%">
+          <path d="M0,0 C320,55 840,65 1440,10 L1440,65 L0,65 Z"></path>
+        </svg>
+      </div>
+
+      <a href="#welcome" class="scroll-ind" aria-label="Scroll down to welcome section"><span></span></a>
+    </section>
+
+    <!-- Welcome & Agricultural Mission (Split Image-Text Layout) -->
+    <section class="section" id="welcome">
+      <div class="container">
+        <div class="split-content">
+          <div class="reveal">
+            <div class="img-frame">
+              <img loading="lazy" src="assets/img/home/farmers-field.jpg" alt="Dedicated Indian farmers tending lush crop rows in river basin">
+            </div>
+          </div>
+          <div class="reveal">
+            <span class="eyebrow"><i class="bi bi-seedling"></i> ABOUT OUR PRODUCER COMPANY</span>
+            <h2>United by the Soil, Driven by Collective Strength</h2>
+            <p>GreenRoots is an autonomous, farmer-owned Producer Company bringing together over 2,500 small and marginal agricultural producers. By pooling resources, adopting scientific soil stewardship, and aggregating produce at the farm gate, we eliminate layers of intermediaries and secure the value our growers deserve.</p>
+            <p>From Cauvery delta paddy terraces to rain-fed dryland millet clusters, every farmer member is a shareholder with equal governance rights, transparent market dividends, and year-round field extension support.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="about.html" class="btn btn-fpc">Our Complete Story</a>
+              <a href="services.html" class="btn btn-outline-fpc">Explore Farmer Services</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Agricultural Impact Section (Numbered Stats) -->
+    <section class="section alt">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="eyebrow"><i class="bi bi-bar-chart"></i> OUR VERIFIED IMPACT</span>
+          <h2>Measurable Progress Across Rural Farming Belts</h2>
+          <p>Real outcomes achieved through cooperative harvesting, certified input supply, and direct institutional buyer tie-ups.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-6 col-lg-3 reveal">
+            <div class="stat-card">
+              <i class="bi bi-people-fill"></i>
+              <strong><span data-count="2500">0</span>+</strong>
+              <span>Active Member Farmers</span>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 reveal">
+            <div class="stat-card">
+              <i class="bi bi-basket-fill"></i>
+              <strong><span data-count="18">0</span>+</strong>
+              <span>Certified Commodities</span>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 reveal">
+            <div class="stat-card">
+              <i class="bi bi-geo-alt-fill"></i>
+              <strong><span data-count="85">0</span>+</strong>
+              <span>Villages Supported</span>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 reveal">
+            <div class="stat-card">
+              <i class="bi bi-truck-front-fill"></i>
+              <strong><span data-count="12500">0</span>+</strong>
+              <span>Tons Harvested Annually</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products Showcase (Carefully Balanced Cards) -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="eyebrow"><i class="bi bi-flower2"></i> HARVEST CATALOGUE</span>
+          <h2>Featured Farm Produce</h2>
+          <p>Sun-ripened traditional paddy, nutrient-dense millets, pulses, and organic grains graded to Grade-A specifications.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-sm-6 col-lg-3 reveal">
+            <article class="fcard prod-card h-100">
+              <div class="thumb">
+                <img loading="lazy" src="assets/img/products/paddy-rice.jpg" alt="Paddy Rice (Traditional) – Rice & Grains">
+              </div>
+              <div class="body">
+                <span class="chip">Rice & Grains</span>
+                <h3>Paddy Rice (Traditional)</h3>
+                <p class="small muted mb-3">Sun-dried, whole paddy grains sourced directly from river basin member farms.</p>
+                <a href="products.html" class="link-arrow mt-auto">View Details <i class="bi bi-arrow-right flip"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-3 reveal">
+            <article class="fcard prod-card h-100">
+              <div class="thumb">
+                <img loading="lazy" src="assets/img/products/brown-rice.jpg" alt="Unpolished Brown Rice – Rice & Grains">
+              </div>
+              <div class="body">
+                <span class="chip">Rice & Grains</span>
+                <h3>Unpolished Brown Rice</h3>
+                <p class="small muted mb-3">Fibre-dense whole grain rice preserving natural bran layer, vitamins, and minerals.</p>
+                <a href="products.html" class="link-arrow mt-auto">View Details <i class="bi bi-arrow-right flip"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-3 reveal">
+            <article class="fcard prod-card h-100">
+              <div class="thumb">
+                <img loading="lazy" src="assets/img/products/ragi.jpg" alt="Finger Millet (Ragi) – Millets">
+              </div>
+              <div class="body">
+                <span class="chip">Millets</span>
+                <h3>Finger Millet (Ragi)</h3>
+                <p class="small muted mb-3">Calcium-rich red ragi grains harvested from traditional dryland farmer clusters.</p>
+                <a href="products.html" class="link-arrow mt-auto">View Details <i class="bi bi-arrow-right flip"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-3 reveal">
+            <article class="fcard prod-card h-100">
+              <div class="thumb">
+                <img loading="lazy" src="assets/img/products/foxtail-millet.jpg" alt="Foxtail Millet (Thinai) – Millets">
+              </div>
+              <div class="body">
+                <span class="chip">Millets</span>
+                <h3>Foxtail Millet (Thinai)</h3>
+                <p class="small muted mb-3">Low-glycemic heritage grain naturally grown with rain-fed irrigation.</p>
+                <a href="products.html" class="link-arrow mt-auto">View Details <i class="bi bi-arrow-right flip"></i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <a class="btn btn-fpc btn-lg" href="products.html"><i class="bi bi-grid-3x3-gap"></i> View Complete Product Catalogue (18+ Items)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Farmer Empowerment Initiatives & Community Infrastructure -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="eyebrow"><i class="bi bi-heart-pulse"></i> GROWER WELFARE & EMPOWERMENT</span>
+          <h2>Farmer Empowerment Initiatives</h2>
+          <p>Real support programs designed to lower smallholder cultivation costs, improve climate resilience, and build intergenerational farming assets.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3 reveal">
+            <div class="fcard icard h-100 p-4 border rounded-4 text-center">
+              <div class="feature-icon-box mx-auto mb-3 text-primary fs-1">
+                <i class="bi bi-gear-wide-connected"></i>
+              </div>
+              <h3 class="h5 mb-2">Custom Hiring Centers</h3>
+              <p class="small text-muted mb-0">Subsidized rental access to modern laser levelers, paddy transplanters, and multi-crop combine harvesters, reducing farm labor costs by 35%.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 reveal">
+            <div class="fcard icard h-100 p-4 border rounded-4 text-center">
+              <div class="feature-icon-box mx-auto mb-3 text-primary fs-1">
+                <i class="bi bi-clipboard2-pulse"></i>
+              </div>
+              <h3 class="h5 mb-2">Free Soil Diagnostic Kits</h3>
+              <p class="small text-muted mb-0">Periodic on-farm soil testing measuring pH, organic carbon, and micronutrients with custom bio-fertilizer recommendations delivered via SMS.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 reveal">
+            <div class="fcard icard h-100 p-4 border rounded-4 text-center">
+              <div class="feature-icon-box mx-auto mb-3 text-primary fs-1">
+                <i class="bi bi-flower1"></i>
+              </div>
+              <h3 class="h5 mb-2">Women Grower SHG Units</h3>
+              <p class="small text-muted mb-0">Dedicated micro-processing units for women-led Self-Help Groups producing cold-pressed virgin coconut oils, graded pulses, and spice powders.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 reveal">
+            <div class="fcard icard h-100 p-4 border rounded-4 text-center">
+              <div class="feature-icon-box mx-auto mb-3 text-primary fs-1">
+                <i class="bi bi-shield-shaded"></i>
+              </div>
+              <h3 class="h5 mb-2">Crop Safety Net Advance</h3>
+              <p class="small text-muted mb-0">Interest-free seasonal seed input loans and automated crop insurance claim processing during unseasonal rains or severe monsoon deficits.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Cultivation Approach (Asymmetrical Editorial Split) -->
+    <section class="section alt">
+      <div class="container">
+        <div class="split-content reverse">
+          <div class="reveal">
+            <div class="img-frame">
+              <img loading="lazy" src="assets/img/about/sustainable-practices.jpg" alt="Drip irrigation watering organic vegetable field">
+            </div>
+          </div>
+          <div class="reveal">
+            <span class="eyebrow"><i class="bi bi-droplet-half"></i> SUSTAINABLE CULTIVATION</span>
+            <h2>Ecological Farming That Protects Soil & Yield</h2>
+            <p>Our agronomists partner with village clusters to implement climate-resilient practices tailored to local soil topographies. By combining ancestral crop rotation wisdom with modern soil moisture sensors, our members cut water and synthetic input costs drastically.</p>
+            <ul class="ticks">
+              <li><strong>Zero-Residue Bio Inputs:</strong> Village-level preparation of neem extracts, jeevamrutha, and trichoderma inoculants.</li>
+              <li><strong>Precision Drip Kits:</strong> Subsidized gravity drip systems that save up to 45% irrigation water.</li>
+              <li><strong>Intercropping & Trap Crops:</strong> Marigold and cowpea border strips that naturally intercept pests.</li>
+            </ul>
+            <a href="services.html" class="btn btn-fpc mt-2">Explore Agronomy Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Farm-to-Market Working Journey (Numbered Process Layout) -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="eyebrow"><i class="bi bi-arrow-repeat"></i> WORKING PROCESS</span>
+          <h2>Our Farm-to-Market Journey</h2>
+          <p>A rigorous five-stage supply chain ensuring complete crop traceability, fair weighing, and rapid payments.</p>
+        </div>
+        <div class="process-row">
+          <div class="process-step reveal">
+            <div class="step-num">1</div>
+            <h3>Farmer Registration</h3>
+            <p>Smallholders register their acreage, expected crop varieties, and harvest windows with village coordinators.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-num">2</div>
+            <h3>Farm-Gate Collection</h3>
+            <p>Scheduled pickup trucks reach the farm with certified digital scales, eliminating middleman transport costs.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-num">3</div>
+            <h3>Moisture & Grade Testing</h3>
+            <p>In-house laboratories check seed viability, foreign matter, and moisture percentage against FSSAI baselines.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-num">4</div>
+            <h3>Hygienic Packaging</h3>
+            <p>Produce is transferred into breathable jute bags, barcode labeled with grower cluster origin data.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-num">5</div>
+            <h3>Direct Buyer Dispatch</h3>
+            <p>Bulk consignments are delivered to registered trade partners with instant direct-bank settlements to farmers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How Our Farmer Producer Community Works (Democratic Governance Architecture) -->
+    <section class="section bg-light-alt">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="eyebrow"><i class="bi bi-diagram-3"></i> DEMOCRATIC COOPERATIVE ARCHITECTURE</span>
+          <h2>How Our Farmer Community Works</h2>
+          <p>Incorporated under the Companies Act and guided by NABARD guidelines, GreenRoots is 100% owned, governed, and operated for the collective benefit of small and marginal growers.</p>
+        </div>
+
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6 reveal">
+            <div class="p-4 p-md-5 rounded-4 border bg-surface shadow-sm h-100">
+              <h3 class="h4 text-primary mb-3"><i class="bi bi-check2-circle me-2"></i>Democratic 1-Member, 1-Vote Structure</h3>
+              <p class="text-muted mb-4">Unlike corporate agribusinesses, share ownership in GreenRoots cannot be concentrated. Every enrolled farmer holds equal voting rights regardless of land acreage, ensuring smallholders have a decisive voice in all major cooperative policies.</p>
+              
+              <ul class="ticks mb-4">
+                <li><strong>Village Cluster Representation:</strong> 42 village clusters elect local grower delegates directly to our governing Board of Directors.</li>
+                <li><strong>Transparent Digital Weighment:</strong> Digital platform scales linked to automated SMS slips prevent farm-gate manipulation.</li>
+                <li><strong>Direct Bank Settlement:</strong> 100% cashless DBT transfers within 24–48 hours directly into farmers' savings bank accounts.</li>
+                <li><strong>Annual Patronage Dividend:</strong> Net company profits are returned as annual dividends proportional to produce sold through the FPC.</li>
+              </ul>
+              <a href="membership.html" class="btn btn-fpc">Explore Membership Details</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal">
+            <div class="ratio ratio-4x3 rounded-4 overflow-hidden border shadow">
+              <img loading="lazy" src="assets/img/about/community-empowerment.jpg" alt="Farmer cooperative members in community meeting" class="w-100 h-100 object-cover">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meet Our Member Farmers (Farmer Profiles with Real Photos) -->
+    <section class="section alt">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="eyebrow"><i class="bi bi-people"></i> COMMUNITY LEADERS</span>
+          <h2>Meet Our Member Farmers</h2>
+          <p>Real stewards of the land who lead village production clusters and govern company decisions.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-sm-6 col-lg-3 reveal">
+            <article class="fcard farmer-card h-100">
+              <div class="thumb">
+                <img loading="lazy" src="assets/img/farmers/farmer-murugan.jpg" alt="Murugan S., third-generation paddy grower from Thanjavur">
+              </div>
+              <div class="body">
+                <h3>Murugan S.</h3>
+                <span class="chip">Traditional Paddy</span>
+                <p class="small muted mt-2 mb-2"><i class="bi bi-geo-alt"></i> Thanjavur, Tamil Nadu</p>
+                <p class="small muted mb-0">Third-generation farmer leading a 120-member organic paddy production cluster.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-3 reveal">
+            <article class="fcard farmer-card h-100">
+              <div class="thumb">
+                <img loading="lazy" src="assets/img/farmers/farmer-lakshmi.jpg" alt="Lakshmi Devi, women cooperative leader from Erode">
+              </div>
+              <div class="body">
+                <h3>Lakshmi Devi</h3>
+                <span class="chip">Pulses & Millets</span>
+                <p class="small muted mt-2 mb-2"><i class="bi bi-geo-alt"></i> Erode, Tamil Nadu</p>
+                <p class="small muted mb-0">Coordinates 40 women growers for centralized sorting and value addition of toor dal.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-3 reveal">
+            <article class="fcard farmer-card h-100">
+              <div class="thumb">
+                <img loading="lazy" src="assets/img/farmers/farmer-ramesh.jpg" alt="Ramesh Patel, groundnut farmer from Rajkot">
+              </div>
+              <div class="body">
+                <h3>Ramesh Patel</h3>
+                <span class="chip">Groundnut & Spices</span>
+                <p class="small muted mt-2 mb-2"><i class="bi bi-geo-alt"></i> Rajkot, Gujarat</p>
+                <p class="small muted mb-0">Pioneered drip-irrigated bold groundnut cultivation with 35% higher kernel density.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-3 reveal">
+            <article class="fcard farmer-card h-100">
+              <div class="thumb">
+                <img loading="lazy" src="assets/img/farmers/farmer-kavitha.jpg" alt="Kavitha R., banana and tropical fruit grower from Theni">
+              </div>
+              <div class="body">
+                <h3>Kavitha R.</h3>
+                <span class="chip">Fresh Banana & Fruits</span>
+                <p class="small muted mt-2 mb-2"><i class="bi bi-geo-alt"></i> Theni, Tamil Nadu</p>
+                <p class="small muted mb-0">Supplies premium grade Cavendish and Nendran bananas to institutional supermarket chains.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Slider -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="eyebrow"><i class="bi bi-chat-quote"></i> VOICES FROM THE FIELD</span>
+          <h2>What Farmers & Buyers Say</h2>
+          <p>Genuine feedback from the farming families who supply our produce and wholesale buyers who rely on our quality.</p>
+        </div>
+        <div class="slider-wrap reveal">
+          <div class="slider" id="slider" tabindex="0" aria-label="Testimonial reviews">
+            <figure class="tcard">
+              <i class="bi bi-quote"></i>
+              <blockquote>"Before GreenRoots, commission agents dictated whatever price they wanted at harvest. Now our village collection centre weighs electronically, gives instant SMS slips, and transfers full payment to my bank in 3 days. My net farm earnings rose by 22% this season."</blockquote>
+              <figcaption>
+                <strong>Murugan S.</strong>
+                <span>Member Farmer (6 Acres Paddy), Thanjavur</span>
+              </figcaption>
+            </figure>
+            <figure class="tcard">
+              <i class="bi bi-quote"></i>
+              <blockquote>"Sourcing 40 tons of finger millet every month was a nightmare of uneven moisture and stone contamination. GreenRoots delivers machine-cleaned, laboratory-certified bags directly to our flour milling facility with complete batch origin papers."</blockquote>
+              <figcaption>
+                <strong>Anita Menon</strong>
+                <span>Procurement Head, Malabar Foods Ltd., Kochi</span>
+              </figcaption>
+            </figure>
+            <figure class="tcard">
+              <i class="bi bi-quote"></i>
+              <blockquote>"The agronomy field school conducted by GreenRoots taught us how to construct simple farm ponds and deploy gravity drip irrigation. We harvested bold groundnuts during a dry spell when neighbouring farms suffered heavy losses."</blockquote>
+              <figcaption>
+                <strong>Ramesh Patel</strong>
+                <span>Member Farmer (8 Acres Groundnut), Rajkot</span>
+              </figcaption>
+            </figure>
+            <figure class="tcard">
+              <i class="bi bi-quote"></i>
+              <blockquote>"Their transparency in moisture testing and grading is refreshing. We have entered a 2-year contract farming agreement for organic toor dal and high-curcumin turmeric with full confidence in their supply continuity."</blockquote>
+              <figcaption>
+                <strong>Suresh Kumar</strong>
+                <span>General Manager, Heritage Organics Retail, Chennai</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="slider-ctl">
+            <button class="icon-btn" data-slide="-1" aria-label="Previous testimonial"><i class="bi bi-chevron-left flip"></i></button>
+            <button class="icon-btn" data-slide="1" aria-label="Next testimonial"><i class="bi bi-chevron-right flip"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Agricultural Insights (Blog Teaser) -->
+    <section class="section alt">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="eyebrow"><i class="bi bi-journal-text"></i> AGRICULTURAL EXTENSION</span>
+          <h2>Latest Agronomy & Market Updates</h2>
+          <p>Field-tested insights, sustainable pest control methods, and seasonal mandi intelligence.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="fcard h-100">
+              <div class="thumb">
+                <a href="blog-details.html?p=natural-pest-control" class="d-block w-100 h-100" aria-label="Natural Pest Control for Small Farms">
+                  <img loading="lazy" src="assets/img/blog/natural-pest-control.jpg" alt="Natural Pest Control for Small Farms">
+                </a>
+              </div>
+              <div class="body">
+                <span class="chip">Organic Farming</span>
+                <p class="small muted mb-1"><i class="bi bi-calendar3"></i> 2026-10-20</p>
+                <h3><a href="blog-details.html?p=natural-pest-control" class="text-decoration-none text-reset">Natural Pest Control for Small Farms</a></h3>
+                <p class="small muted flex-grow-1">Botanical sprays, trap crops, and beneficial predator insects that cut chemical expenses and protect pollinators.</p>
+                <a class="link-arrow mt-2" href="blog-details.html?p=natural-pest-control">Read Article <i class="bi bi-arrow-right flip"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="fcard h-100">
+              <div class="thumb">
+                <a href="blog-details.html?p=water-saving-drip" class="d-block w-100 h-100" aria-label="Drip Irrigation: Saving Water, Raising Yield">
+                  <img loading="lazy" src="assets/img/blog/drip-irrigation.jpg" alt="Drip Irrigation: Saving Water, Raising Yield">
+                </a>
+              </div>
+              <div class="body">
+                <span class="chip">Sustainable Agriculture</span>
+                <p class="small muted mb-1"><i class="bi bi-calendar3"></i> 2026-10-19</p>
+                <h3><a href="blog-details.html?p=water-saving-drip" class="text-decoration-none text-reset">Drip Irrigation: Saving Water, Raising Yield</a></h3>
+                <p class="small muted flex-grow-1">How smallholders are halving freshwater consumption and cutting weed emergence with subsidized gravity drip kits.</p>
+                <a class="link-arrow mt-2" href="blog-details.html?p=water-saving-drip">Read Article <i class="bi bi-arrow-right flip"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="fcard h-100">
+              <div class="thumb">
+                <a href="blog-details.html?p=member-story-lakshmi" class="d-block w-100 h-100" aria-label="From Two Acres to a Thriving Millet Business">
+                  <img loading="lazy" src="assets/img/blog/millet-success.jpg" alt="From Two Acres to a Thriving Millet Business">
+                </a>
+              </div>
+              <div class="body">
+                <span class="chip">Farmer Stories</span>
+                <p class="small muted mb-1"><i class="bi bi-calendar3"></i> 2026-10-18</p>
+                <h3><a href="blog-details.html?p=member-story-lakshmi" class="text-decoration-none text-reset">From Two Acres to a Thriving Millet Business</a></h3>
+                <p class="small muted flex-grow-1">A woman member farmer details how collective aggregation and direct flour processing transformed her dryland crops.</p>
+                <a class="link-arrow mt-2" href="blog-details.html?p=member-story-lakshmi">Read Article <i class="bi bi-arrow-right flip"></i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Institutional Buyer Partnership CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="split-content">
+          <div class="reveal">
+            <div class="img-frame">
+              <img loading="lazy" src="assets/img/home/buyer-handshake.jpg" alt="Direct partnership handshake between farmer group and institutional food buyer">
+            </div>
+          </div>
+          <div class="reveal">
+            <span class="eyebrow"><i class="bi bi-handshake"></i> COMMERCIAL PARTNERSHIPS</span>
+            <h2>Direct Wholesale Procurement for Food Brands & Retailers</h2>
+            <p>Source consistent multi-ton volumes of graded grains, pulses, and spices straight from organized farmer clusters. We provide verified lab certificates, lot traceability, and scheduled delivery pipelines.</p>
+            <ul class="ticks">
+              <li><strong>Zero Intermediary Commissions:</strong> Transparent contract terms negotiated directly with the producer company board.</li>
+              <li><strong>Rigorous Lab Certification:</strong> Guaranteed moisture parameters, sortex cleaning, and FSSAI quality documentation.</li>
+              <li><strong>Custom Packaging Options:</strong> 25kg / 50kg jute sacks, hermetic grain liners, or retail-ready consumer pouch packaging.</li>
+            </ul>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="contact.html" class="btn btn-fpc"><i class="bi bi-file-earmark-text"></i> Submit Buyer Tonnage Request</a>
+              <a href="products.html" class="btn btn-outline-fpc">Inspect Product Inventory</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Action CTA Band -->
+    <section class="cta-band">
+      <div class="container text-center reveal">
+        <h2>Together, Let's Build a Greener, Fairer Agricultural Future.</h2>
+        <p>Join thousands of farmers, food processors, and conscious buyers strengthening rural livelihoods through collective enterprise.</p>
+        <div class="d-flex justify-content-center flex-wrap gap-3">
+          <a class="btn btn-accent btn-lg" href="membership.html"><i class="bi bi-person-check"></i> Become a Member Farmer</a>
+          <a class="btn btn-outline-light btn-lg" href="contact.html"><i class="bi bi-telephone"></i> Talk with Our Rural Desk</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Complete Professional Footer -->
+    <!-- Aligned Professional Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4 g-lg-4 g-xl-5">
+        <!-- Company Info -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <a class="navbar-brand footer-brand mb-3" href="index.html" aria-label="GreenRoots Producer Company">
+            <span class="brand-logo-wrap">
+              <svg class="brand-logo-svg" viewBox="0 0 40 40" aria-hidden="true">
+            <circle cx="20" cy="20" r="20" fill="#245C36"/>
+            <path d="M20 31V15M20 22c-5.5 0-8.5-3.5-8.5-8.5 5.5 0 8.5 3.5 8.5 8.5zM20 18c0-5.5 3.5-8.5 8.5-8.5 0 5.5-3.5 8.5-8.5 8.5z" stroke="#E4B94F" stroke-width="2.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="20" cy="13" r="1.8" fill="#E4B94F"/>
+          </svg>
+            </span>
+            <span class="brand-text">
+              <span class="brand-title">GreenRoots</span>
+              <span class="brand-tagline">Producer Company</span>
+            </span>
+          </a>
+          <p class="pe-lg-2">An autonomous, farmer-owned producer company connecting verified growers directly with institutional buyers for fair prices, quality grading, and sustainable agriculture.</p>
+          <div class="social">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Visit GreenRoots on Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Visit GreenRoots on Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Watch GreenRoots on YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Connect with GreenRoots on LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="Follow GreenRoots on X"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="about.html">About Company</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="products.html">Farm Products</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Products -->
+        <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0">
+          <h3>Our Products</h3>
+          <ul>
+            <li><a href="products.html">Paddy &amp; Rice</a></li>
+            <li><a href="products.html">Ancient Millets</a></li>
+            <li><a href="products.html">Graded Pulses</a></li>
+            <li><a href="products.html">Whole Spices</a></li>
+            <li><a href="products.html">Fresh Harvest</a></li>
+            <li><a href="products.html">Organic Produce</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="col-lg-2 col-md-4 col-6 mb-4 mb-lg-0">
+          <h3>Our Services</h3>
+          <ul>
+            <li><a href="service-details.html?s=product-collection">Farm-Gate Collection</a></li>
+            <li><a href="service-details.html?s=quality-inspection">Quality Lab Testing</a></li>
+            <li><a href="service-details.html?s=market-linkage">Direct Market Linkage</a></li>
+            <li><a href="service-details.html?s=bulk-supply">Bulk Product Supply</a></li>
+            <li><a href="service-details.html?s=training-programs">Agronomy Field Schools</a></li>
+            <li><a href="service-details.html?s=membership-support">Farmer Shareholding</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-lg-3 col-md-8 col-12">
+          <h3>Contact Desk</h3>
+          <ul class="contact-list">
+            <li><i class="bi bi-geo-alt"></i> 142 Farmer Bhavan, Cauvery Basin Agro Complex, Thanjavur, Tamil Nadu 613001</li>
+            <li><i class="bi bi-telephone"></i> <span dir="ltr">+91 4362 250100</span></li>
+            <li><i class="bi bi-envelope"></i> contact@greenroots.org</li>
+            <li><i class="bi bi-clock"></i> Mon–Sat: 8:00 AM – 6:00 PM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 GreenRoots Producer Company. All rights reserved.</span>
+        <span><a href="#">Privacy Policy</a> · <a href="#">Terms &amp; Conditions</a> · <a href="#">Farmer Bylaws</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <button id="toTop" class="to-top" aria-label="Back to top of page"><i class="bi bi-arrow-up"></i></button>
+
+  <!-- Modal Feedback Alert -->
+  <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="sm-t" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-center p-4">
+        <div class="ok-ring"><i class="bi bi-check-lg"></i></div>
+        <h2 id="sm-t" class="h4">Thank you!</h2>
+        <p id="successMsg">Your submission was received. Our team will contact you shortly.</p>
+        <button class="btn btn-fpc" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/validation.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

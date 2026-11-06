@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agricultural Knowledge &amp; Field Insights | GreenRoots Producer Company</title>
+  <meta name="description" content="Practical agronomy articles, sustainable farming methods, regenerative practices, market price trends, and inspiring farmer success stories from GreenRoots.">
+  <meta property="og:title" content="Agricultural Knowledge &amp; Insights | GreenRoots Producer Company">
+  <meta property="og:description" content="Discover field-tested sustainable cultivation techniques, organic pest management, micro-irrigation, and agricultural market intelligence.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/blog/blog-hero.jpg">
+  <link rel="icon" type="image/svg+xml" href="assets/img/common/favicon.svg">
+  <link rel="alternate icon" href="assets/img/common/favicon.ico">
+  <script>
+    (function(){
+      try {
+        var h = document.documentElement;
+        var t = localStorage.getItem('fpc-theme') || 'light';
+        var r = localStorage.getItem('fpc-dir') || 'ltr';
+        h.setAttribute('data-theme', t);
+        h.setAttribute('dir', r);
+        h.classList.add('js');
+        window.__rtl = r === 'rtl';
+      } catch(e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Playfair+Display:ital,wght@0,600..900;1,600..800&display=swap" rel="stylesheet">
+  <script>
+    document.write('<link id="bs-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap' + (window.__rtl ? '.rtl' : '') + '.min.css">');
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { corePlugins: { preflight: false } }</script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body data-page="blog">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Header Navigation -->
+    <header class="site-header">
+    <nav class="navbar navbar-expand-xl container" aria-label="Main navigation">
+      <a class="navbar-brand" href="index.html" aria-label="GreenRoots Producer Company Home">
+        <span class="brand-logo-wrap">
+          <svg class="brand-logo-svg" viewBox="0 0 40 40" aria-hidden="true">
+            <circle cx="20" cy="20" r="20" fill="#245C36"/>
+            <path d="M20 31V15M20 22c-5.5 0-8.5-3.5-8.5-8.5 5.5 0 8.5 3.5 8.5 8.5zM20 18c0-5.5 3.5-8.5 8.5-8.5 0 5.5-3.5 8.5-8.5 8.5z" stroke="#E4B94F" stroke-width="2.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="20" cy="13" r="1.8" fill="#E4B94F"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-title">GreenRoots</span>
+          <span class="brand-tagline">Producer Company</span>
+        </span>
+      </a>
+
+      <div class="header-actions order-xl-last">
+        <button class="icon-btn d-none d-xl-inline-flex" id="themeToggle" aria-label="Toggle light or dark theme"><i class="bi bi-moon-stars"></i></button>
+        <button class="icon-btn d-none d-xl-inline-flex" id="rtlToggle" aria-label="Toggle text direction RTL or LTR"><span>RTL</span></button>
+        <a href="contact.html" class="btn btn-accent d-none d-xl-inline-flex">Get in Touch</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto align-items-xl-center text-center">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span>Home</span>
+              <i class="bi bi-chevron-down dd-icon" aria-hidden="true"></i>
+            </a>
+            <ul class="dropdown-menu fpc-dd">
+              <li><a class="dropdown-item" href="index.html">Farming Excellence</a></li>
+              <li><a class="dropdown-item" href="home-2.html">Our Agricultural Story</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+          <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <!-- Mobile Menu Footer: Strictly ordered (1) Nav Links above, (2) Theme & RTL in 1 row, (3) CTA Button below -->
+        <div class="mobile-menu-footer d-xl-none text-center pt-3 pb-2 mt-2 border-top border-white-10">
+          <div class="mobile-controls d-flex justify-content-center align-items-center gap-3 mb-3">
+            <button class="btn btn-outline-secondary btn-sm mobile-theme-btn" id="mobileThemeToggle" type="button" aria-label="Toggle light or dark theme">
+              <i class="bi bi-moon-stars me-1"></i> <span class="theme-label">Theme</span>
+            </button>
+            <button class="btn btn-outline-secondary btn-sm mobile-rtl-btn" id="mobileRtlToggle" type="button" aria-label="Toggle text direction RTL or LTR">
+              <i class="bi bi-translate me-1"></i> <span class="rtl-label">RTL / LTR</span>
+            </button>
+          </div>
+          <div class="mobile-cta">
+            <a href="contact.html" class="btn btn-accent w-100">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Inner Page Hero (Height 380px–450px with Unique Image) -->
+    <section class="page-hero" style="background-image: url('assets/img/blog/blog-hero.jpg'); --hero: url('assets/img/blog/blog-hero.jpg');">
+      <div class="container">
+        <h1 class="reveal">Insights, Agronomy &amp; Field Knowledge</h1>
+        <p class="lead reveal">Practical advice, regenerative techniques, scientific market intelligence, and grower stories curated by our agricultural extension specialists.</p>
+        <nav aria-label="Breadcrumb" class="reveal">
+          <ol class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Blog</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Main Blog Section -->
+    <section class="section">
+      <div class="container">
+        <!-- Featured Article Spotlight (Populated dynamically by main.js) -->
+        <div id="bFeat" class="reveal mb-5"></div>
+
+        <!-- Toolbar & Search -->
+        <div class="toolbar reveal">
+          <div class="input-group search">
+            <span class="input-group-text"><i class="bi bi-search"></i></span>
+            <input id="bSearch" class="form-control" type="search" placeholder="Search articles (e.g. Drip Irrigation, Millets, Soil Sensors)…" aria-label="Search articles">
+          </div>
+        </div>
+
+        <!-- Category Filter Chips (Populated dynamically by main.js) -->
+        <div class="chips reveal" id="bChips"></div>
+
+        <!-- Article Grid (Populated dynamically by main.js from data.js) -->
+        <div class="row g-4" id="bGrid" aria-live="polite">
+          <div class="col-md-6 col-lg-4 reveal in">
+            <article class="fcard h-100">
+              <div class="thumb">
+                <a href="blog-details.html?p=seasonal-crop-planning" class="d-block w-100 h-100" aria-label="Seasonal Crop Planning in River Basins: Maximizing Multi-Season Returns">
+                  <img loading="lazy" src="assets/img/blog/featured-article.jpg" alt="Seasonal Crop Planning in River Basins: Maximizing Multi-Season Returns">
+                </a>
+              </div>
+              <div class="body">
+                <span class="chip">Crop Planning</span>
+                <p class="small muted mb-1"><i class="bi bi-calendar3"></i> 04 Nov 2026</p>
+                <h3><a href="blog-details.html?p=seasonal-crop-planning" class="text-decoration-none text-reset">Seasonal Crop Planning in River Basins: Maximizing Multi-Season Returns</a></h3>
+                <p class="small muted flex-grow-1">Synchronizing Kuruvai and Thaladi paddy sowings with short-duration pulse rotations eliminates fallow weed competition, conserves residual sub-soil moisture, and elevates annual net returns by 30%.</p>
+                <a class="link-arrow mt-2" href="blog-details.html?p=seasonal-crop-planning">Read Article <i class="bi bi-arrow-right flip"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal in">
+            <article class="fcard h-100">
+              <div class="thumb">
+                <a href="blog-details.html?p=soil-fertility-microbiome" class="d-block w-100 h-100" aria-label="Revitalizing Soil Fertility Through Indigenous Microorganisms (IMO)">
+                  <img loading="lazy" src="assets/img/blog/blog-article-inline.jpg" alt="Revitalizing Soil Fertility Through Indigenous Microorganisms (IMO)">
+                </a>
+              </div>
+              <div class="body">
+                <span class="chip">Soil Health</span>
+                <p class="small muted mb-1"><i class="bi bi-calendar3"></i> 01 Nov 2026</p>
+                <h3><a href="blog-details.html?p=soil-fertility-microbiome" class="text-decoration-none text-reset">Revitalizing Soil Fertility Through Indigenous Microorganisms (IMO)</a></h3>
+                <p class="small muted flex-grow-1">Reintroducing native mycorrhizae, liquid Jeevamrutham bio-ferments, and leguminous green manures softens compacted hardpans and accelerates soil organic carbon assimilation.</p>
+                <a class="link-arrow mt-2" href="blog-details.html?p=soil-fertility-microbiome">Read Article <i class="bi bi-arrow-right flip"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal in">
+            <article class="fcard h-100">
+              <div class="thumb">
+                <a href="blog-details.html?p=drone-bio-spraying" class="d-block w-100 h-100" aria-label="Drone Technology in Smallholder Agriculture: Precision Bio-Spraying">
+                  <img loading="lazy" src="assets/img/blog/agriculture-drone-spraying.jpg" alt="Drone Technology in Smallholder Agriculture: Precision Bio-Spraying">
+                </a>
+              </div>
+              <div class="body">
+                <span class="chip">Agri-Tech</span>
+                <p class="small muted mb-1"><i class="bi bi-calendar3"></i> 28 Oct 2026</p>
+                <h3><a href="blog-details.html?p=drone-bio-spraying" class="text-decoration-none text-reset">Drone Technology in Smallholder Agriculture: Precision Bio-Spraying</a></h3>
+                <p class="small muted flex-grow-1">Centrifugal rotary atomizer drones cut water volume requirements by 90%, eliminate operator chemical exposure, and achieve comprehensive underleaf canopy pest coverage in minutes.</p>
+                <a class="link-arrow mt-2" href="blog-details.html?p=drone-bio-spraying">Read Article <i class="bi bi-arrow-right flip"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal in">
+            <article class="fcard h-100">
+              <div class="thumb">
+                <a href="blog-details.html?p=vermicompost-bio-enrichment" class="d-block w-100 h-100" aria-label="Farm-Scale Vermicomposting: Converting Crop Residue into Black Gold">
+                  <img loading="lazy" src="assets/img/blog/vermicompost-production.jpg" alt="Farm-Scale Vermicomposting: Converting Crop Residue into Black Gold">
+                </a>
+              </div>
+              <div class="body">
+                <span class="chip">Soil Health</span>
+                <p class="small muted mb-1"><i class="bi bi-calendar3"></i> 22 Oct 2026</p>
+                <h3><a href="blog-details.html?p=vermicompost-bio-enrichment" class="text-decoration-none text-reset">Farm-Scale Vermicomposting: Converting Crop Residue into Black Gold</a></h3>
+                <p class="small muted flex-grow-1">Establishing decentralized vermicomposting beds using Eisenia fetida earthworms recycles crop straw into nutrient-dense vermicast, cutting synthetic fertilizer dependency by 45%.</p>
+                <a class="link-arrow mt-2" href="blog-details.html?p=vermicompost-bio-enrichment">Read Article <i class="bi bi-arrow-right flip"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal in">
+            <article class="fcard h-100">
+              <div class="thumb">
+                <a href="blog-details.html?p=indigenous-cattle-farming" class="d-block w-100 h-100" aria-label="Integrating Indigenous Desi Cows into Zero-Budget Natural Farming">
+                  <img loading="lazy" src="assets/img/blog/indigenous-desi-cows.jpg" alt="Integrating Indigenous Desi Cows into Zero-Budget Natural Farming">
+                </a>
+              </div>
+              <div class="body">
+                <span class="chip">Agro-Ecology</span>
+                <p class="small muted mb-1"><i class="bi bi-calendar3"></i> 18 Oct 2026</p>
+                <h3><a href="blog-details.html?p=indigenous-cattle-farming" class="text-decoration-none text-reset">Integrating Indigenous Desi Cows into Zero-Budget Natural Farming</a></h3>
+                <p class="small muted flex-grow-1">Indigenous Bos indicus cattle breeds produce dung and urine packed with probiotic microflora that form the biological engine for liquid Jeevamrutham and organic pest repellents.</p>
+                <a class="link-arrow mt-2" href="blog-details.html?p=indigenous-cattle-farming">Read Article <i class="bi bi-arrow-right flip"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal in">
+            <article class="fcard h-100">
+              <div class="thumb">
+                <a href="blog-details.html?p=agroforestry-bund-planting" class="d-block w-100 h-100" aria-label="Agroforestry on Field Bunds: Multi-Tier Timber and Fruit Tree Economics">
+                  <img loading="lazy" src="assets/img/blog/agroforestry-field-bunds.jpg" alt="Agroforestry on Field Bunds: Multi-Tier Timber and Fruit Tree Economics">
+                </a>
+              </div>
+              <div class="body">
+                <span class="chip">Agroforestry</span>
+                <p class="small muted mb-1"><i class="bi bi-calendar3"></i> 14 Oct 2026</p>
+                <h3><a href="blog-details.html?p=agroforestry-bund-planting" class="text-decoration-none text-reset">Agroforestry on Field Bunds: Multi-Tier Timber and Fruit Tree Economics</a></h3>
+                <p class="small muted flex-grow-1">Planting Malabar Neem, Teak, and Moringa along peripheral farm boundaries converts unproductive field bunds into long-term wealth assets without sacrificing annual crop acreage.</p>
+                <a class="link-arrow mt-2" href="blog-details.html?p=agroforestry-bund-planting">Read Article <i class="bi bi-arrow-right flip"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal in">
+            <article class="fcard h-100">
+              <div class="thumb">
+                <a href="blog-details.html?p=biological-water-harvesting" class="d-block w-100 h-100" aria-label="Farm Ponds and Percolation Trenches: Decentralized Monsoon Harvesting">
+                  <img loading="lazy" src="assets/img/blog/farm-pond-harvesting.jpg" alt="Farm Ponds and Percolation Trenches: Decentralized Monsoon Harvesting">
+                </a>
+              </div>
+              <div class="body">
+                <span class="chip">Water Conservation</span>
+                <p class="small muted mb-1"><i class="bi bi-calendar3"></i> 10 Oct 2026</p>
+                <h3><a href="blog-details.html?p=biological-water-harvesting" class="text-decoration-none text-reset">Farm Ponds and Percolation Trenches: Decentralized Monsoon Harvesting</a></h3>
+                <p class="small muted flex-grow-1">Constructing lined on-farm collection ponds and contour bund trenches captures torrential monsoon run-off, recharging local aquifer tables and providing critical lifelines for summer crops.</p>
+                <a class="link-arrow mt-2" href="blog-details.html?p=biological-water-harvesting">Read Article <i class="bi bi-arrow-right flip"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal in">
+            <article class="fcard h-100">
+              <div class="thumb">
+                <a href="blog-details.html?p=honeybee-pollination-yield" class="d-block w-100 h-100" aria-label="Apiculture on Farmlands: Raising Crop Yields by 25% with Honeybee Colonies">
+                  <img loading="lazy" src="assets/img/blog/honeybee-apiculture.jpg" alt="Apiculture on Farmlands: Raising Crop Yields by 25% with Honeybee Colonies">
+                </a>
+              </div>
+              <div class="body">
+                <span class="chip">Pollination</span>
+                <p class="small muted mb-1"><i class="bi bi-calendar3"></i> 06 Oct 2026</p>
+                <h3><a href="blog-details.html?p=honeybee-pollination-yield" class="text-decoration-none text-reset">Apiculture on Farmlands: Raising Crop Yields by 25% with Honeybee Colonies</a></h3>
+                <p class="small muted flex-grow-1">Integrating Apis cerana indica bee colonies within horticultural crops dramatically boosts cross-pollination, raising fruit yields by 20% to 35% while generating pure raw honey harvests.</p>
+                <a class="link-arrow mt-2" href="blog-details.html?p=honeybee-pollination-yield">Read Article <i class="bi bi-arrow-right flip"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal in">
+            <article class="fcard h-100">
+              <div class="thumb">
+                <a href="blog-details.html?p=cold-chain-perishables" class="d-block w-100 h-100" aria-label="Solar Cold Storage: Preventing Post-Harvest Spoilage for Horticultural Crops">
+                  <img loading="lazy" src="assets/img/blog/solar-cold-storage.jpg" alt="Solar Cold Storage: Preventing Post-Harvest Spoilage for Horticultural Crops">
+                </a>
+              </div>
+              <div class="body">
+                <span class="chip">Post-Harvest</span>
+                <p class="small muted mb-1"><i class="bi bi-calendar3"></i> 02 Oct 2026</p>
+                <h3><a href="blog-details.html?p=cold-chain-perishables" class="text-decoration-none text-reset">Solar Cold Storage: Preventing Post-Harvest Spoilage for Horticultural Crops</a></h3>
+                <p class="small muted flex-grow-1">Decentralized solar-powered micro-cold rooms located at village collection hubs extend the shelf life of fresh tomatoes, chilies, and leafy greens from 2 days to 21 days.</p>
+                <a class="link-arrow mt-2" href="blog-details.html?p=cold-chain-perishables">Read Article <i class="bi bi-arrow-right flip"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal in">
+            <article class="fcard h-100">
+              <div class="thumb">
+                <a href="blog-details.html?p=natural-pest-control" class="d-block w-100 h-100" aria-label="Natural Pest Control for Small Farms">
+                  <img loading="lazy" src="assets/img/blog/natural-pest-control.jpg" alt="Natural Pest Control for Small Farms">
+                </a>
+              </div>
+              <div class="body">
+                <span class="chip">Organic Farming</span>
+                <p class="small muted mb-1"><i class="bi bi-calendar3"></i> 24 Sep 2026</p>
+                <h3><a href="blog-details.html?p=natural-pest-control" class="text-decoration-none text-reset">Natural Pest Control for Small Farms</a></h3>
+                <p class="small muted flex-grow-1">Learn how neem sprays, yellow sticky traps, and border trap crops can suppress 80% of common pests without chemical poisons.</p>
+                <a class="link-arrow mt-2" href="blog-details.html?p=natural-pest-control">Read Article <i class="bi bi-arrow-right flip"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal in">
+            <article class="fcard h-100">
+              <div class="thumb">
+                <a href="blog-details.html?p=water-saving-drip" class="d-block w-100 h-100" aria-label="Drip Irrigation: Saving Water, Raising Yield">
+                  <img loading="lazy" src="assets/img/blog/drip-irrigation.jpg" alt="Drip Irrigation: Saving Water, Raising Yield">
+                </a>
+              </div>
+              <div class="body">
+                <span class="chip">Water Conservation</span>
+                <p class="small muted mb-1"><i class="bi bi-calendar3"></i> 18 Sep 2026</p>
+                <h3><a href="blog-details.html?p=water-saving-drip" class="text-decoration-none text-reset">Drip Irrigation: Saving Water, Raising Yield</a></h3>
+                <p class="small muted flex-grow-1">A step-by-step calculation showing how smallholders cut water use by 45% while doubling vegetable harvests with low-pressure drip.</p>
+                <a class="link-arrow mt-2" href="blog-details.html?p=water-saving-drip">Read Article <i class="bi bi-arrow-right flip"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal in">
+            <article class="fcard h-100">
+              <div class="thumb">
+                <a href="blog-details.html?p=member-story-lakshmi" class="d-block w-100 h-100" aria-label="From Two Acres to a Thriving Millet Business">
+                  <img loading="lazy" src="assets/img/blog/millet-success.jpg" alt="From Two Acres to a Thriving Millet Business">
+                </a>
+              </div>
+              <div class="body">
+                <span class="chip">Success Stories</span>
+                <p class="small muted mb-1"><i class="bi bi-calendar3"></i> 10 Sep 2026</p>
+                <h3><a href="blog-details.html?p=member-story-lakshmi" class="text-decoration-none text-reset">From Two Acres to a Thriving Millet Business</a></h3>
+                <p class="small muted flex-grow-1">How member farmer Lakshmi replaced high-cost hybrid paddy with drought-hardy millets and boosted her family take-home profit 3x.</p>
+                <a class="link-arrow mt-2" href="blog-details.html?p=member-story-lakshmi">Read Article <i class="bi bi-arrow-right flip"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal in">
+            <article class="fcard h-100">
+              <div class="thumb">
+                <a href="blog-details.html?p=soil-sensors" class="d-block w-100 h-100" aria-label="Low-Cost Soil Sensors for Smallholders">
+                  <img loading="lazy" src="assets/img/blog/soil-sensors.jpg" alt="Low-Cost Soil Sensors for Smallholders">
+                </a>
+              </div>
+              <div class="body">
+                <span class="chip">Agri-Tech</span>
+                <p class="small muted mb-1"><i class="bi bi-calendar3"></i> 02 Sep 2026</p>
+                <h3><a href="blog-details.html?p=soil-sensors" class="text-decoration-none text-reset">Low-Cost Soil Sensors for Smallholders</a></h3>
+                <p class="small muted flex-grow-1">Testing ₹1,500 capacitance moisture sensors in clay-loam fields: what works, what fails, and how to calibrate for real savings.</p>
+                <a class="link-arrow mt-2" href="blog-details.html?p=soil-sensors">Read Article <i class="bi bi-arrow-right flip"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal in">
+            <article class="fcard h-100">
+              <div class="thumb">
+                <a href="blog-details.html?p=price-trends" class="d-block w-100 h-100" aria-label="Reading Seasonal Mandi Price Trends">
+                  <img loading="lazy" src="assets/img/blog/price-trends.jpg" alt="Reading Seasonal Mandi Price Trends">
+                </a>
+              </div>
+              <div class="body">
+                <span class="chip">Market Intelligence</span>
+                <p class="small muted mb-1"><i class="bi bi-calendar3"></i> 25 Aug 2026</p>
+                <h3><a href="blog-details.html?p=price-trends" class="text-decoration-none text-reset">Reading Seasonal Mandi Price Trends</a></h3>
+                <p class="small muted flex-grow-1">Why selling at harvest gate costs you 22% of margin, and how our warehouse receipt credit lets you hold for the premium cycle.</p>
+                <a class="link-arrow mt-2" href="blog-details.html?p=price-trends">Read Article <i class="bi bi-arrow-right flip"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal in">
+            <article class="fcard h-100">
+              <div class="thumb">
+                <a href="blog-details.html?p=crop-rotation" class="d-block w-100 h-100" aria-label="Crop Rotation That Rebuilds Soil Organic Carbon">
+                  <img loading="lazy" src="assets/img/blog/crop-rotation.jpg" alt="Crop Rotation That Rebuilds Soil Organic Carbon">
+                </a>
+              </div>
+              <div class="body">
+                <span class="chip">Soil Health</span>
+                <p class="small muted mb-1"><i class="bi bi-calendar3"></i> 17 Aug 2026</p>
+                <h3><a href="blog-details.html?p=crop-rotation" class="text-decoration-none text-reset">Crop Rotation That Rebuilds Soil Organic Carbon</a></h3>
+                <p class="small muted flex-grow-1">Alternating deep-rooted pulses with shallow cereals breaks nematode cycles and locks in 0.4% more soil organic carbon over 3 years.</p>
+                <a class="link-arrow mt-2" href="blog-details.html?p=crop-rotation">Read Article <i class="bi bi-arrow-right flip"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal in">
+            <article class="fcard h-100">
+              <div class="thumb">
+                <a href="blog-details.html?p=seed-saving" class="d-block w-100 h-100" aria-label="The Strategic Value of Preserving Native Seeds">
+                  <img loading="lazy" src="assets/img/blog/native-seeds.jpg" alt="The Strategic Value of Preserving Native Seeds">
+                </a>
+              </div>
+              <div class="body">
+                <span class="chip">Organic Farming</span>
+                <p class="small muted mb-1"><i class="bi bi-calendar3"></i> 09 Aug 2026</p>
+                <h3><a href="blog-details.html?p=seed-saving" class="text-decoration-none text-reset">The Strategic Value of Preserving Native Seeds</a></h3>
+                <p class="small muted flex-grow-1">Why heirloom seeds outperform expensive commercial hybrids in flood-prone and saline delta soils across Tamil Nadu.</p>
+                <a class="link-arrow mt-2" href="blog-details.html?p=seed-saving">Read Article <i class="bi bi-arrow-right flip"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal in">
+            <article class="fcard h-100">
+              <div class="thumb">
+                <a href="blog-details.html?p=solar-pumps" class="d-block w-100 h-100" aria-label="Solar Water Pumps: Fuel-Free Irrigation">
+                  <img loading="lazy" src="assets/img/blog/solar-pumps.jpg" alt="Solar Water Pumps: Fuel-Free Irrigation">
+                </a>
+              </div>
+              <div class="body">
+                <span class="chip">Agri-Tech</span>
+                <p class="small muted mb-1"><i class="bi bi-calendar3"></i> 01 Aug 2026</p>
+                <h3><a href="blog-details.html?p=solar-pumps" class="text-decoration-none text-reset">Solar Water Pumps: Fuel-Free Irrigation</a></h3>
+                <p class="small muted flex-grow-1">5 HP solar DC pump economics vs. diesel engines: payback timelines, subsidy navigation, and groundwater recharge protocols.</p>
+                <a class="link-arrow mt-2" href="blog-details.html?p=solar-pumps">Read Article <i class="bi bi-arrow-right flip"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal in">
+            <article class="fcard h-100">
+              <div class="thumb">
+                <a href="blog-details.html?p=post-harvest" class="d-block w-100 h-100" aria-label="Cutting Post-Harvest Losses in Grain Storage">
+                  <img loading="lazy" src="assets/img/blog/post-harvest.jpg" alt="Cutting Post-Harvest Losses in Grain Storage">
+                </a>
+              </div>
+              <div class="body">
+                <span class="chip">Post-Harvest</span>
+                <p class="small muted mb-1"><i class="bi bi-calendar3"></i> 22 Jul 2026</p>
+                <h3><a href="blog-details.html?p=post-harvest" class="text-decoration-none text-reset">Cutting Post-Harvest Losses in Grain Storage</a></h3>
+                <p class="small muted flex-grow-1">Hermetic storage bags, moisture testing, and biological fumigation eliminate grain weevil losses during long storage cycles.</p>
+                <a class="link-arrow mt-2" href="blog-details.html?p=post-harvest">Read Article <i class="bi bi-arrow-right flip"></i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <p id="bEmpty" class="text-center text-muted py-5 d-none"><i class="bi bi-search fs-2 d-block mb-2"></i>No articles found matching your query. Try a different topic.</p>
+
+        
+      </div>
+    </section>
+
+    <!-- Newsletter Subscription Band -->
+    <section class="cta-band">
+      <div class="container text-center reveal">
+        <h2>Stay Updated with Monthly Agricultural Intelligence</h2>
+        <p class="lead mb-4 mx-auto" style="max-width: 650px;">Receive quarterly mandi price trends, seasonal weather forecasts, and organic pest alert advisories delivered straight to your inbox.</p>
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+            <form class="fpc-form" data-validate data-msg="Thank you for subscribing to GreenRoots Agricultural Intelligence!" novalidate>
+              <div class="input-group input-group-lg">
+                <input type="email" name="subEmail" class="form-control" placeholder="Enter your email address" required aria-label="Email address for agricultural newsletter">
+                <button class="btn btn-accent" type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Aligned 5-Column Footer -->
+    <!-- Aligned Professional Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4 g-lg-4 g-xl-5">
+        <!-- Company Info -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <a class="navbar-brand footer-brand mb-3" href="index.html" aria-label="GreenRoots Producer Company">
+            <span class="brand-logo-wrap">
+              <svg class="brand-logo-svg" viewBox="0 0 40 40" aria-hidden="true">
+            <circle cx="20" cy="20" r="20" fill="#245C36"/>
+            <path d="M20 31V15M20 22c-5.5 0-8.5-3.5-8.5-8.5 5.5 0 8.5 3.5 8.5 8.5zM20 18c0-5.5 3.5-8.5 8.5-8.5 0 5.5-3.5 8.5-8.5 8.5z" stroke="#E4B94F" stroke-width="2.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="20" cy="13" r="1.8" fill="#E4B94F"/>
+          </svg>
+            </span>
+            <span class="brand-text">
+              <span class="brand-title">GreenRoots</span>
+              <span class="brand-tagline">Producer Company</span>
+            </span>
+          </a>
+          <p class="pe-lg-2">An autonomous, farmer-owned producer company connecting verified growers directly with institutional buyers for fair prices, quality grading, and sustainable agriculture.</p>
+          <div class="social">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Visit GreenRoots on Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Visit GreenRoots on Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Watch GreenRoots on YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Connect with GreenRoots on LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="Follow GreenRoots on X"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="about.html">About Company</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="products.html">Farm Products</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Products -->
+        <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0">
+          <h3>Our Products</h3>
+          <ul>
+            <li><a href="products.html">Paddy &amp; Rice</a></li>
+            <li><a href="products.html">Ancient Millets</a></li>
+            <li><a href="products.html">Graded Pulses</a></li>
+            <li><a href="products.html">Whole Spices</a></li>
+            <li><a href="products.html">Fresh Harvest</a></li>
+            <li><a href="products.html">Organic Produce</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="col-lg-2 col-md-4 col-6 mb-4 mb-lg-0">
+          <h3>Our Services</h3>
+          <ul>
+            <li><a href="service-details.html?s=product-collection">Farm-Gate Collection</a></li>
+            <li><a href="service-details.html?s=quality-inspection">Quality Lab Testing</a></li>
+            <li><a href="service-details.html?s=market-linkage">Direct Market Linkage</a></li>
+            <li><a href="service-details.html?s=bulk-supply">Bulk Product Supply</a></li>
+            <li><a href="service-details.html?s=training-programs">Agronomy Field Schools</a></li>
+            <li><a href="service-details.html?s=membership-support">Farmer Shareholding</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-lg-3 col-md-8 col-12">
+          <h3>Contact Desk</h3>
+          <ul class="contact-list">
+            <li><i class="bi bi-geo-alt"></i> 142 Farmer Bhavan, Cauvery Basin Agro Complex, Thanjavur, Tamil Nadu 613001</li>
+            <li><i class="bi bi-telephone"></i> <span dir="ltr">+91 4362 250100</span></li>
+            <li><i class="bi bi-envelope"></i> contact@greenroots.org</li>
+            <li><i class="bi bi-clock"></i> Mon–Sat: 8:00 AM – 6:00 PM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 GreenRoots Producer Company. All rights reserved.</span>
+        <span><a href="#">Privacy Policy</a> · <a href="#">Terms &amp; Conditions</a> · <a href="#">Farmer Bylaws</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <button id="toTop" class="to-top" aria-label="Back to top of page"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/validation.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,475 @@
+/* ==========================================================================
+   GreenRoots – Responsive Breakpoint Rules
+   Sizes: 360px, 375px, 390px, 414px, 768px, 1024px, 1280px, 1440px, 1920px
+   ========================================================================== */
+
+/* Laptop & Desktop Large Navigation Breakpoint (< 1200px) */
+@media (max-width: 1199.98px) {
+  .site-header .navbar-collapse {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    margin-top: 0.75rem;
+    padding: 1.25rem;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.14);
+    width: 100%;
+    z-index: 1050;
+  }
+
+  .site-header .navbar-collapse.show {
+    visibility: visible !important;
+    display: block !important;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: stretch !important;
+    gap: 0.35rem;
+    width: 100%;
+    visibility: visible !important;
+  }
+
+  .nav-link {
+    padding: 0.75rem 1rem !important;
+    font-size: 1.02rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    visibility: visible !important;
+  }
+
+  .nav-link.active::after {
+    display: none;
+  }
+
+  .nav-link.active {
+    background-color: rgba(30, 84, 48, 0.08);
+  }
+
+  /* Accordion style nested dropdown on mobile/tablet */
+  .nav-link.dropdown-toggle {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center !important;
+    gap: 0.45rem;
+  }
+
+  .nav-link.dropdown-toggle .dd-icon {
+    font-size: 0.78rem;
+    color: currentColor;
+    margin-inline-start: 0.25rem;
+    transition: transform 0.25s ease;
+  }
+
+  .fpc-dd {
+    position: static !important;
+    float: none;
+    width: auto !important;
+    min-width: 210px;
+    max-width: 290px;
+    box-shadow: none;
+    border: 1px solid var(--border);
+    background-color: var(--surface-alt);
+    margin: 0.4rem auto 0.6rem !important;
+    padding: 0.4rem;
+    border-radius: 12px;
+    display: none;
+    transform: none !important;
+  }
+
+  .fpc-dd.show {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .dropdown-item {
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+    white-space: nowrap !important;
+    text-align: center;
+  }
+
+  /* Hero split on tablet/laptop */
+  .hero-split {
+    padding: 4.5rem 0;
+  }
+}
+
+/* Tablet & Smaller Screens (< 992px) */
+@media (max-width: 991.98px) {
+  .section {
+    padding: clamp(3.25rem, 5vw, 4.5rem) 0;
+  }
+
+  .split-content {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .split-content.reverse {
+    direction: ltr;
+  }
+
+  .feat {
+    grid-template-columns: 1fr;
+  }
+
+  .feat img {
+    max-height: 320px;
+  }
+
+  .price.featured {
+    transform: none;
+  }
+  .price.featured:hover {
+    transform: translateY(-5px);
+  }
+
+  .gallery {
+    columns: 2 240px;
+  }
+
+  .hero-stat-ribbon {
+    gap: 1rem;
+  }
+
+  .sticky-side {
+    position: static !important;
+  }
+
+  .vid-sculpture-wrap {
+    max-width: 440px;
+  }
+}
+
+/* Mobile Devices (< 768px) */
+@media (max-width: 767.98px) {
+  .page-hero {
+    min-height: 320px;
+    padding: 4.5rem 0 3rem;
+  }
+
+  .hero-full {
+    min-height: 88vh;
+  }
+
+  .hero-stat-ribbon {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.85rem;
+  }
+
+  .process-row {
+    grid-template-columns: 1fr;
+  }
+
+  .process-step {
+    display: flex;
+    text-align: start;
+    gap: 1.25rem;
+    align-items: flex-start;
+    padding: 0.75rem 0;
+  }
+
+  .step-num {
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .gallery {
+    columns: 1 100%;
+  }
+
+  .footer-bottom {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .toolbar select {
+    flex: 1 1 100%;
+  }
+}
+
+/* Small Smartphone Sizes (< 576px) (360px - 414px) */
+@media (max-width: 575.98px) {
+  .brand-title {
+    font-size: 1.2rem;
+  }
+
+  .brand-logo-wrap {
+    width: 36px;
+    height: 36px;
+  }
+
+  .brand-logo-svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .icon-btn,
+  button.icon-btn,
+  #themeToggle,
+  #rtlToggle {
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+    min-height: 36px !important;
+    padding: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .hero-full h1 {
+    font-size: 2.1rem;
+  }
+
+  .hero-split-copy h1 {
+    font-size: 2.1rem;
+  }
+
+  .hero-1-content .btn, .hero-split-copy .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .float-prod-badge {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.75rem;
+  }
+
+  .float-prod-badge img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .leaf-decor {
+    display: none;
+  }
+
+  .form-card {
+    padding: 1.35rem 1rem;
+  }
+
+  .buyer-box {
+    padding: 2rem 1.2rem;
+  }
+
+  .countdown div {
+    min-width: 68px;
+    padding: 0.75rem 0.5rem;
+  }
+
+  .countdown b {
+    font-size: 1.6rem;
+  }
+
+  .to-top {
+    inset-inline-end: 16px;
+    bottom: 16px;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+/* Micro screens (<= 360px) */
+@media (max-width: 360px) {
+  .header-actions {
+    gap: 0.35rem;
+  }
+
+  .navbar-brand {
+    gap: 0.5rem;
+  }
+
+  .brand-title {
+    font-size: 1.1rem;
+  }
+
+  .brand-tagline {
+    font-size: 0.62rem;
+  }
+}
+
+/* ==========================================================================
+   Refined Mobile Header & 320px Ultra-Compact Rules
+   ========================================================================== */
+@media (max-width: 1199.98px) {
+  .site-header .navbar {
+    padding-block: 0.5rem;
+  }
+
+  .site-header .navbar-collapse {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    margin-top: 0.75rem;
+    padding: 1.25rem 1rem;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.14);
+    width: 100%;
+    z-index: 1050;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  .site-header .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    text-align: center;
+    gap: 0.35rem;
+    width: 100%;
+  }
+
+  .site-header .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .site-header .nav-link {
+    padding: 0.7rem 1rem !important;
+    font-size: 1.05rem;
+    font-weight: 600;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .site-header .dropdown-menu {
+    text-align: center;
+    background-color: var(--surface-alt);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: none;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+  }
+
+  .site-header .dropdown-item {
+    text-align: center;
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* 425px Large Mobile */
+@media (max-width: 425px) {
+  .site-header .container {
+    padding-inline: 0.85rem;
+  }
+
+  .navbar-brand {
+    gap: 0.5rem;
+    max-width: calc(100% - 56px);
+    overflow: hidden;
+  }
+
+  .brand-logo-wrap,
+  .brand-logo-svg {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+  }
+
+  .brand-title {
+    font-size: 1.18rem;
+    line-height: 1.1;
+  }
+
+  .brand-tagline {
+    font-size: 0.62rem;
+    letter-spacing: 0.04em;
+  }
+
+  .navbar-toggler {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background-color: var(--surface);
+    color: var(--text);
+    flex-shrink: 0;
+  }
+
+  .mobile-controls {
+    gap: 0.75rem !important;
+  }
+
+  .mobile-theme-btn,
+  .mobile-rtl-btn {
+    padding: 0.5rem 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  .page-hero {
+    min-height: 320px;
+    padding: 4.25rem 0 3.25rem;
+  }
+
+  .page-hero h1 {
+    font-size: 1.95rem;
+  }
+
+  .page-hero .lead {
+    font-size: 0.98rem;
+  }
+}
+
+/* 320px Ultra-Compact Mobile */
+@media (max-width: 330px) {
+  .site-header .container {
+    padding-inline: 0.45rem;
+  }
+
+  .navbar-brand {
+    gap: 0.35rem;
+    max-width: calc(100% - 46px);
+  }
+
+  .brand-logo-wrap,
+  .brand-logo-svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .brand-title {
+    font-size: 1.05rem;
+  }
+
+  .brand-tagline {
+    font-size: 0.56rem;
+  }
+
+  .navbar-toggler {
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+  }
+
+  .mobile-theme-btn,
+  .mobile-rtl-btn {
+    font-size: 0.78rem;
+    padding: 0.45rem 0.35rem;
+  }
+
+  .page-hero h1 {
+    font-size: 1.7rem;
+  }
+}

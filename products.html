@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fresh Agricultural Products | GreenRoots Producer Company</title>
+  <meta name="description" content="Explore single-origin, certified farm produce directly from GreenRoots member growers: organic rice, traditional millets, graded pulses, cold-pressed oilseeds, whole spices, and fresh farm harvests.">
+  <meta property="og:title" content="Agricultural Products | GreenRoots Producer Company">
+  <meta property="og:description" content="Single-origin, clean, graded agricultural commodities with full batch traceability and fair grower pricing.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/products/products-hero.jpg">
+  <link rel="icon" type="image/svg+xml" href="assets/img/common/favicon.svg">
+  <link rel="alternate icon" href="assets/img/common/favicon.ico">
+  <script>
+    (function(){
+      try {
+        var h = document.documentElement;
+        var t = localStorage.getItem('fpc-theme') || 'light';
+        var r = localStorage.getItem('fpc-dir') || 'ltr';
+        h.setAttribute('data-theme', t);
+        h.setAttribute('dir', r);
+        h.classList.add('js');
+        window.__rtl = r === 'rtl';
+      } catch(e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Playfair+Display:ital,wght@0,600..900;1,600..800&display=swap" rel="stylesheet">
+  <script>
+    document.write('<link id="bs-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap' + (window.__rtl ? '.rtl' : '') + '.min.css">');
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { corePlugins: { preflight: false } }</script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body data-page="products">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Header Navigation -->
+    <header class="site-header">
+    <nav class="navbar navbar-expand-xl container" aria-label="Main navigation">
+      <a class="navbar-brand" href="index.html" aria-label="GreenRoots Producer Company Home">
+        <span class="brand-logo-wrap">
+          <svg class="brand-logo-svg" viewBox="0 0 40 40" aria-hidden="true">
+            <circle cx="20" cy="20" r="20" fill="#245C36"/>
+            <path d="M20 31V15M20 22c-5.5 0-8.5-3.5-8.5-8.5 5.5 0 8.5 3.5 8.5 8.5zM20 18c0-5.5 3.5-8.5 8.5-8.5 0 5.5-3.5 8.5-8.5 8.5z" stroke="#E4B94F" stroke-width="2.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="20" cy="13" r="1.8" fill="#E4B94F"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-title">GreenRoots</span>
+          <span class="brand-tagline">Producer Company</span>
+        </span>
+      </a>
+
+      <div class="header-actions order-xl-last">
+        <button class="icon-btn d-none d-xl-inline-flex" id="themeToggle" aria-label="Toggle light or dark theme"><i class="bi bi-moon-stars"></i></button>
+        <button class="icon-btn d-none d-xl-inline-flex" id="rtlToggle" aria-label="Toggle text direction RTL or LTR"><span>RTL</span></button>
+        <a href="contact.html" class="btn btn-accent d-none d-xl-inline-flex">Get in Touch</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto align-items-xl-center text-center">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span>Home</span>
+              <i class="bi bi-chevron-down dd-icon" aria-hidden="true"></i>
+            </a>
+            <ul class="dropdown-menu fpc-dd">
+              <li><a class="dropdown-item" href="index.html">Farming Excellence</a></li>
+              <li><a class="dropdown-item" href="home-2.html">Our Agricultural Story</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <!-- Mobile Menu Footer: Strictly ordered (1) Nav Links above, (2) Theme & RTL in 1 row, (3) CTA Button below -->
+        <div class="mobile-menu-footer d-xl-none text-center pt-3 pb-2 mt-2 border-top border-white-10">
+          <div class="mobile-controls d-flex justify-content-center align-items-center gap-3 mb-3">
+            <button class="btn btn-outline-secondary btn-sm mobile-theme-btn" id="mobileThemeToggle" type="button" aria-label="Toggle light or dark theme">
+              <i class="bi bi-moon-stars me-1"></i> <span class="theme-label">Theme</span>
+            </button>
+            <button class="btn btn-outline-secondary btn-sm mobile-rtl-btn" id="mobileRtlToggle" type="button" aria-label="Toggle text direction RTL or LTR">
+              <i class="bi bi-translate me-1"></i> <span class="rtl-label">RTL / LTR</span>
+            </button>
+          </div>
+          <div class="mobile-cta">
+            <a href="contact.html" class="btn btn-accent w-100">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Inner Page Hero (Height 380px–450px with Unique Image) -->
+    <section class="page-hero" style="background-image: url('assets/img/products/products-hero.jpg'); --hero: url('assets/img/products/products-hero.jpg');">
+      <div class="container">
+        <h1 class="reveal">Fresh Agricultural Produce Directly from Growers</h1>
+        <p class="lead reveal">Cultivated with care, harvested at peak maturity, and graded under strict quality standards. Sourced directly from our collective of smallholder farmers.</p>
+        <nav aria-label="Breadcrumb" class="reveal">
+          <ol class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Products</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Editorial Feature: Seasonal Harvest Spotlight -->
+    <section class="section">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6 reveal">
+            <div class="ratio ratio-4x3 rounded-4 overflow-hidden shadow-lg border">
+              <img src="assets/img/products/featured-harvest.jpg" alt="Seasonal harvest crates filled with freshly picked organic produce" class="img-fluid object-cover">
+            </div>
+          </div>
+          <div class="col-lg-6 reveal">
+            <span class="eyebrow">CURATED SEASONAL HARVEST</span>
+            <h2 class="mb-3">From Soil to Shelf: Complete Purity &amp; Traceability</h2>
+            <p class="text-muted lead mb-4">Every grain, pulse, spice, and vegetable in our catalog is grown by registered GreenRoots shareholders practicing sustainable agriculture, zero chemical adulteration, and water-efficient stewardship.</p>
+            
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="p-3 rounded-3 border bg-light h-100">
+                  <h5 class="text-primary mb-1"><i class="bi bi-shield-check me-1"></i> FSSAI Certified</h5>
+                  <p class="small text-muted mb-0">Audited hygienic handling and safe storage across all processing hubs.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="p-3 rounded-3 border bg-light h-100">
+                  <h5 class="text-primary mb-1"><i class="bi bi-geo-alt me-1"></i> 100% Single-Origin</h5>
+                  <p class="small text-muted mb-0">Traceable to the specific village cluster and farmer producer group.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="p-3 rounded-3 border bg-light h-100">
+                  <h5 class="text-primary mb-1"><i class="bi bi-percent me-1"></i> Zero Middlemen</h5>
+                  <p class="small text-muted mb-0">85% of commodity sale proceeds go directly to grower bank accounts.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="p-3 rounded-3 border bg-light h-100">
+                  <h5 class="text-primary mb-1"><i class="bi bi-truck me-1"></i> Bulk &amp; Retail Packs</h5>
+                  <p class="small text-muted mb-0">Flexible packaging options from 1kg retail pouches to 50kg wholesale bags.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Catalog & Interactive Filters -->
+    <section class="section bg-light-alt" id="catalog">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="eyebrow">EXPLORE OUR CATALOG</span>
+          <h2>Agricultural Commodities &amp; Farm Produce</h2>
+          <p>Search by crop name or filter across categories to view current available stocks and specifications.</p>
+        </div>
+
+        <!-- Filter & Search Toolbar -->
+        <div class="toolbar reveal">
+          <div class="input-group search">
+            <span class="input-group-text"><i class="bi bi-search"></i></span>
+            <input id="pSearch" class="form-control" type="search" placeholder="Search products (e.g., Ponni Rice, Ragi, Turmeric)…" aria-label="Search products">
+          </div>
+          <select id="pSort" class="form-select" aria-label="Sort products">
+            <option value="az">Sort by Name: A–Z</option>
+            <option value="za">Sort by Name: Z–A</option>
+            <option value="qty">Sort by Available Stock: High to Low</option>
+          </select>
+        </div>
+
+        <!-- Category Chips -->
+        <div class="chips reveal" id="pChips" role="group" aria-label="Product categories">
+          <button class="chip-btn active" data-cat="all">All Products</button>
+          <button class="chip-btn" data-cat="Rice &amp; Grains">Rice &amp; Grains</button>
+          <button class="chip-btn" data-cat="Millets">Ancient Millets</button>
+          <button class="chip-btn" data-cat="Pulses">Graded Pulses</button>
+          <button class="chip-btn" data-cat="Fresh Vegetables">Fresh Vegetables</button>
+          <button class="chip-btn" data-cat="Fresh Fruits">Fresh Fruits</button>
+          <button class="chip-btn" data-cat="Oil Seeds">Oil Seeds</button>
+          <button class="chip-btn" data-cat="Spices">Whole Spices</button>
+          <button class="chip-btn" data-cat="Organic Products">Certified Organic</button>
+        </div>
+
+        <!-- Product Grid (Populated dynamically by products.js from data.js) -->
+        <div class="row g-4" id="pGrid" aria-live="polite"></div>
+        <p id="pEmpty" class="text-center text-muted py-5 d-none"><i class="bi bi-emoji-neutral fs-2 d-block mb-2"></i>No agricultural products match your search or selected filter.</p>
+      </div>
+    </section>
+
+    <!-- Comprehensive Crop Categories & Harvest Profiles -->
+    <section class="section bg-light-alt">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="eyebrow"><i class="bi bi-grid"></i> DIVERSE AGRICULTURAL RANGE</span>
+          <h2>Our Core Produce Categories &amp; Harvest Profiles</h2>
+          <p>Carefully cultivated across river basin alluvial soils and rain-fed drylands by 4,250+ certified smallholder members.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="fcard p-4 rounded-4 bg-surface border h-100 shadow-sm">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="feature-icon-box text-success fs-2">
+                  <i class="bi bi-egg-fried"></i>
+                </div>
+                <div>
+                  <h3 class="h5 mb-0">Food Grains &amp; Cereals</h3>
+                  <span class="small text-muted">Aged Single-Origin Basins</span>
+                </div>
+              </div>
+              <p class="small text-muted mb-3">Traditional non-GMO paddy varieties, aged whole raw rice, and fiber-dense unpolished brown rice cultivated in Cauvery silt fields. Low breakage rates (&lt; 2%) and naturally sun-dried.</p>
+              <ul class="list-unstyled small text-muted mb-0">
+                <li class="mb-1"><i class="bi bi-check2 text-success me-1"></i> Moisture: Strictly &le; 13.0%</li>
+                <li class="mb-1"><i class="bi bi-check2 text-success me-1"></i> Packaging: 25kg / 50kg HDPE</li>
+                <li><i class="bi bi-check2 text-success me-1"></i> Peak Harvest: Jan&ndash;Feb / Oct&ndash;Nov</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="fcard p-4 rounded-4 bg-surface border h-100 shadow-sm">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="feature-icon-box text-warning fs-2">
+                  <i class="bi bi-sun"></i>
+                </div>
+                <div>
+                  <h3 class="h5 mb-0">Heritage Dryland Millets</h3>
+                  <span class="small text-muted">Low-Glycemic Smart Food</span>
+                </div>
+              </div>
+              <p class="small text-muted mb-3">Foxtail (Thinai), Finger Millet (Ragi), Pearl Millet (Bajra), and Kodo millets grown with zero synthetic chemicals in dryland red soils. High dietary fiber and rich mineral density.</p>
+              <ul class="list-unstyled small text-muted mb-0">
+                <li class="mb-1"><i class="bi bi-check2 text-warning me-1"></i> Machine destoned &amp; graded</li>
+                <li class="mb-1"><i class="bi bi-check2 text-warning me-1"></i> Gluten-free diet certified</li>
+                <li><i class="bi bi-check2 text-warning me-1"></i> Year-round forward contracts</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="fcard p-4 rounded-4 bg-surface border h-100 shadow-sm">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="feature-icon-box text-primary fs-2">
+                  <i class="bi bi-basket3"></i>
+                </div>
+                <div>
+                  <h3 class="h5 mb-0">Pulses &amp; Legumes</h3>
+                  <span class="small text-muted">High-Protein Soil Enrichers</span>
+                </div>
+              </div>
+              <p class="small text-muted mb-3">Bold whole green gram (moong), unpolished black gram (urad), and split toor dal harvested from nitrogen-fixing rotation plots. Free from synthetic oil or artificial color polish.</p>
+              <ul class="list-unstyled small text-muted mb-0">
+                <li class="mb-1"><i class="bi bi-check2 text-primary me-1"></i> 100% Unpolished &amp; pure</li>
+                <li class="mb-1"><i class="bi bi-check2 text-primary me-1"></i> Protein content: 22%&ndash;25%</li>
+                <li><i class="bi bi-check2 text-primary me-1"></i> Germination rate: &ge; 92%</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="fcard p-4 rounded-4 bg-surface border h-100 shadow-sm">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="feature-icon-box text-danger fs-2">
+                  <i class="bi bi-patch-check"></i>
+                </div>
+                <div>
+                  <h3 class="h5 mb-0">Fresh Farm Vegetables</h3>
+                  <span class="small text-muted">Daily Morning Harvests</span>
+                </div>
+              </div>
+              <p class="small text-muted mb-3">Harvested pre-dawn across river valleys: vine-ripened tomatoes, tender country okra, baby brinjals, bottle gourds, and native leafy greens sorted and packed within 4 hours of picking.</p>
+              <ul class="list-unstyled small text-muted mb-0">
+                <li class="mb-1"><i class="bi bi-check2 text-danger me-1"></i> Pre-cooled crate logistics</li>
+                <li class="mb-1"><i class="bi bi-check2 text-danger me-1"></i> Zero artificial wax coatings</li>
+                <li><i class="bi bi-check2 text-danger me-1"></i> Direct supermarket delivery</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="fcard p-4 rounded-4 bg-surface border h-100 shadow-sm">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="feature-icon-box text-info fs-2">
+                  <i class="bi bi-tree"></i>
+                </div>
+                <div>
+                  <h3 class="h5 mb-0">Seasonal Orchard Fruits</h3>
+                  <span class="small text-muted">Naturally Tree-Ripened</span>
+                </div>
+              </div>
+              <p class="small text-muted mb-3">Authentic Nendran bananas, high-brix guava, seasonal sweet limes, and ruby pomegranates from foothill micro-climates. Ripened without carbide gas or chemical accelerants.</p>
+              <ul class="list-unstyled small text-muted mb-0">
+                <li class="mb-1"><i class="bi bi-check2 text-info me-1"></i> Carbide-free natural ripening</li>
+                <li class="mb-1"><i class="bi bi-check2 text-info me-1"></i> Graded by diameter &amp; brix</li>
+                <li><i class="bi bi-check2 text-info me-1"></i> Export-grade packaging crates</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="fcard p-4 rounded-4 bg-surface border h-100 shadow-sm">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="feature-icon-box text-success fs-2">
+                  <i class="bi bi-flower1"></i>
+                </div>
+                <div>
+                  <h3 class="h5 mb-0">Spices &amp; Organic Specials</h3>
+                  <span class="small text-muted">Verified Potency &amp; Aroma</span>
+                </div>
+              </div>
+              <p class="small text-muted mb-3">Salem turmeric fingers boasting 4.2%+ verified curcumin, Malabar extra-bold black peppercorns, and wood-pressed edible sesame oils extracted at village women SHG units.</p>
+              <ul class="list-unstyled small text-muted mb-0">
+                <li class="mb-1"><i class="bi bi-check2 text-success me-1"></i> Lab tested curcumin content</li>
+                <li class="mb-1"><i class="bi bi-check2 text-success me-1"></i> Steam sterilized whole peppercorns</li>
+                <li><i class="bi bi-check2 text-success me-1"></i> Vacuum nitrogen pouch packaging</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sourcing & Laboratory Quality Assurance Framework -->
+    <section class="section">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6 order-lg-2 reveal">
+            <div class="ratio ratio-4x3 rounded-4 overflow-hidden shadow-lg border">
+              <img src="assets/img/products/quality-testing.jpg" alt="Agricultural scientist performing quality grading and moisture checks" class="img-fluid object-cover">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1 reveal">
+            <span class="eyebrow">RIGOROUS QUALITY CONTROLS</span>
+            <h2 class="mb-3">Standardized Inspection &amp; Grain Grading</h2>
+            <p class="text-muted lead mb-4">Every lot collected from farmers undergoes structured 4-step quality verification before packaging and dispatch, guaranteeing consistency for commercial buyers.</p>
+
+            <div class="process-steps-list">
+              <div class="d-flex gap-3 mb-3">
+                <div class="step-num flex-shrink-0">1</div>
+                <div>
+                  <h5 class="mb-1 text-primary">NIR Moisture Calibration</h5>
+                  <p class="text-muted small mb-0">Automated moisture screening keeps grain lots strictly within 12–14% target limits to avoid pest damage and preserve shelf-life.</p>
+                </div>
+              </div>
+
+              <div class="d-flex gap-3 mb-3">
+                <div class="step-num flex-shrink-0">2</div>
+                <div>
+                  <h5 class="mb-1 text-primary">Mechanical Destoning &amp; Cleaning</h5>
+                  <p class="text-muted small mb-0">High-efficiency air-screen cleaners and gravity separators eliminate chaf, foreign matter, and broken kernels down to &lt; 0.5%.</p>
+                </div>
+              </div>
+
+              <div class="d-flex gap-3 mb-3">
+                <div class="step-num flex-shrink-0">3</div>
+                <div>
+                  <h5 class="mb-1 text-primary">Pesticide &amp; Aflatoxin Screening</h5>
+                  <p class="text-muted small mb-0">Periodic testing ensures adherence to maximum residue limits (MRL) under FSSAI and international APEDA standards.</p>
+                </div>
+              </div>
+
+              <div class="d-flex gap-3">
+                <div class="step-num flex-shrink-0">4</div>
+                <div>
+                  <h5 class="mb-1 text-primary">Food-Grade Nitrogen Flush Packaging</h5>
+                  <p class="text-muted small mb-0">Custom packaging with multi-wall jute, HDPE, or vacuum-sealed pouches preserves aroma, taste, and seed viability.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Quality Standards & Testing Benchmarks Table -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="eyebrow"><i class="bi bi-sliders"></i> CERTIFIED COMPLIANCE</span>
+          <h2>Quality Assurance Benchmarks &amp; Testing Standards</h2>
+          <p>Every commercial consignment dispatched from our central agro depot is accompanied by a certified batch Certificate of Analysis (COA).</p>
+        </div>
+
+        <div class="table-responsive rounded-4 border shadow-sm reveal">
+          <table class="table table-striped align-middle mb-0">
+            <thead class="table-light">
+              <tr>
+                <th scope="col" class="py-3 px-4">Quality Parameter</th>
+                <th scope="col" class="py-3 px-4">Commodity Scope</th>
+                <th scope="col" class="py-3 px-4">GreenRoots Standard</th>
+                <th scope="col" class="py-3 px-4">FSSAI / Mandi Baseline</th>
+                <th scope="col" class="py-3 px-4">Verification Methodology</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="py-3 px-4 fw-semibold text-primary">Moisture Content</td>
+                <td class="py-3 px-4">Paddy, Millets, Pulses</td>
+                <td class="py-3 px-4"><span class="badge bg-success-subtle text-success">&le; 12.0%</span></td>
+                <td class="py-3 px-4 text-muted">&le; 14.0%</td>
+                <td class="py-3 px-4 small text-muted">Digital NIR Grain Moisture Meter (ISO 712)</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 fw-semibold text-primary">Foreign Matter &amp; Chaff</td>
+                <td class="py-3 px-4">All Cereals &amp; Grains</td>
+                <td class="py-3 px-4"><span class="badge bg-success-subtle text-success">&le; 0.5%</span></td>
+                <td class="py-3 px-4 text-muted">&le; 2.0%</td>
+                <td class="py-3 px-4 small text-muted">Air-screen destoner &amp; mechanical sieve analysis</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 fw-semibold text-primary">Broken / Shriveled Grains</td>
+                <td class="py-3 px-4">Milled Rice &amp; Millets</td>
+                <td class="py-3 px-4"><span class="badge bg-success-subtle text-success">&le; 2.0%</span></td>
+                <td class="py-3 px-4 text-muted">&le; 5.0%</td>
+                <td class="py-3 px-4 small text-muted">Optical photo-sensor length grader</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 fw-semibold text-primary">Aflatoxin B1 / Total</td>
+                <td class="py-3 px-4">Groundnut &amp; Food Grains</td>
+                <td class="py-3 px-4"><span class="badge bg-success-subtle text-success">&le; 4.0 ppb</span></td>
+                <td class="py-3 px-4 text-muted">&le; 15.0 ppb</td>
+                <td class="py-3 px-4 small text-muted">Fluorometric &amp; ELISA immunoassay testing</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 fw-semibold text-primary">Chemical Pesticide Residue</td>
+                <td class="py-3 px-4">Organic Certified Produce</td>
+                <td class="py-3 px-4"><span class="badge bg-success-subtle text-success">Zero / Non-Detect</span></td>
+                <td class="py-3 px-4 text-muted">MRL Thresholds</td>
+                <td class="py-3 px-4 small text-muted">GC-MS/MS &amp; LC-MS/MS multi-residue screen</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 fw-semibold text-primary">Curcumin Percentage</td>
+                <td class="py-3 px-4">Turmeric Fingers &amp; Powder</td>
+                <td class="py-3 px-4"><span class="badge bg-success-subtle text-success">&ge; 4.2%</span></td>
+                <td class="py-3 px-4 text-muted">&ge; 2.5%</td>
+                <td class="py-3 px-4 small text-muted">Spectrophotometric UV absorbance (ASTA 18.0)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wholesale & Institutional Procurement CTA -->
+    <section class="cta-band">
+      <div class="container text-center reveal">
+        <h2>Require Bulk Commercial Shipments or Custom Milling?</h2>
+        <p class="lead mb-4">We supply multi-ton consignments of traditional rice, millets, pulses, and spices to mills, consumer brands, retail chains, and government institutions.</p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a class="btn btn-accent btn-lg" href="contact.html">Request Wholesale Price Quotation</a>
+          <a class="btn btn-outline-light btn-lg" href="services.html">Review Bulk Logistics Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Enquiry Modal (Handled by products.js & validation.js) -->
+    <div class="modal fade" id="enqModal" tabindex="-1" aria-labelledby="enqT" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-3 border-0 shadow-lg">
+          <div class="modal-header border-0 pb-0">
+            <div>
+              <h2 class="h5 mb-1" id="enqT">Product Purchase Enquiry</h2>
+              <p class="small text-muted mb-0">Direct procurement from GreenRoots Producer Company.</p>
+            </div>
+            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body pt-3">
+            <form class="fpc-form" data-validate data-msg="Your product enquiry has been received. Our agricultural trade desk will contact you within 24 hours." novalidate>
+              <div class="row g-3">
+                <div class="col-12">
+                  <label class="form-label fw-semibold" for="eProd">Selected Agricultural Commodity</label>
+                  <input class="form-control bg-light" id="eProd" name="product" readonly>
+                </div>
+                <div class="col-12">
+                  <label class="form-label fw-semibold" for="eName">Contact Name or Organization *</label>
+                  <input class="form-control" id="eName" name="eName" type="text" placeholder="e.g. Ramesh Kumar or Kaveri Foods Ltd" required data-rule="name" autocomplete="name" maxlength="50" pattern="^[A-Za-z]+(?: [A-Za-z]+)*$">
+                  <div class="invalid-feedback"></div>
+                </div>
+                <div class="col-12">
+                  <label class="form-label fw-semibold" for="eMob">Mobile / WhatsApp Number *</label>
+                  <input class="form-control" id="eMob" name="eMob" type="tel" placeholder="e.g. 9876543210" required data-rule="mobile" maxlength="10" inputmode="numeric" pattern="^[6-9][0-9]{9}$">
+                  <div class="invalid-feedback"></div>
+                </div>
+                <div class="col-12">
+                  <label class="form-label fw-semibold" for="eQty">Estimated Quantity Required (kg / quintals)</label>
+                  <input class="form-control" id="eQty" name="eQty" type="number" placeholder="e.g. 500" min="10">
+                  <div class="invalid-feedback"></div>
+                </div>
+                <div class="col-12">
+                  <label class="form-label fw-semibold" for="eNotes">Delivery Location / Additional Specifications</label>
+                  <textarea class="form-control" id="eNotes" name="eNotes" rows="2" placeholder="e.g. Requires 25kg bags, delivery to Chennai warehouse"></textarea>
+                </div>
+                <div class="col-12 pt-2">
+                  <button class="btn btn-fpc w-100" type="submit">Submit Product Enquiry</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Aligned 5-Column Footer -->
+    <!-- Aligned Professional Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4 g-lg-4 g-xl-5">
+        <!-- Company Info -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <a class="navbar-brand footer-brand mb-3" href="index.html" aria-label="GreenRoots Producer Company">
+            <span class="brand-logo-wrap">
+              <svg class="brand-logo-svg" viewBox="0 0 40 40" aria-hidden="true">
+            <circle cx="20" cy="20" r="20" fill="#245C36"/>
+            <path d="M20 31V15M20 22c-5.5 0-8.5-3.5-8.5-8.5 5.5 0 8.5 3.5 8.5 8.5zM20 18c0-5.5 3.5-8.5 8.5-8.5 0 5.5-3.5 8.5-8.5 8.5z" stroke="#E4B94F" stroke-width="2.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="20" cy="13" r="1.8" fill="#E4B94F"/>
+          </svg>
+            </span>
+            <span class="brand-text">
+              <span class="brand-title">GreenRoots</span>
+              <span class="brand-tagline">Producer Company</span>
+            </span>
+          </a>
+          <p class="pe-lg-2">An autonomous, farmer-owned producer company connecting verified growers directly with institutional buyers for fair prices, quality grading, and sustainable agriculture.</p>
+          <div class="social">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Visit GreenRoots on Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Visit GreenRoots on Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Watch GreenRoots on YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Connect with GreenRoots on LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="Follow GreenRoots on X"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="about.html">About Company</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="products.html">Farm Products</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Products -->
+        <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0">
+          <h3>Our Products</h3>
+          <ul>
+            <li><a href="products.html">Paddy &amp; Rice</a></li>
+            <li><a href="products.html">Ancient Millets</a></li>
+            <li><a href="products.html">Graded Pulses</a></li>
+            <li><a href="products.html">Whole Spices</a></li>
+            <li><a href="products.html">Fresh Harvest</a></li>
+            <li><a href="products.html">Organic Produce</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="col-lg-2 col-md-4 col-6 mb-4 mb-lg-0">
+          <h3>Our Services</h3>
+          <ul>
+            <li><a href="service-details.html?s=product-collection">Farm-Gate Collection</a></li>
+            <li><a href="service-details.html?s=quality-inspection">Quality Lab Testing</a></li>
+            <li><a href="service-details.html?s=market-linkage">Direct Market Linkage</a></li>
+            <li><a href="service-details.html?s=bulk-supply">Bulk Product Supply</a></li>
+            <li><a href="service-details.html?s=training-programs">Agronomy Field Schools</a></li>
+            <li><a href="service-details.html?s=membership-support">Farmer Shareholding</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-lg-3 col-md-8 col-12">
+          <h3>Contact Desk</h3>
+          <ul class="contact-list">
+            <li><i class="bi bi-geo-alt"></i> 142 Farmer Bhavan, Cauvery Basin Agro Complex, Thanjavur, Tamil Nadu 613001</li>
+            <li><i class="bi bi-telephone"></i> <span dir="ltr">+91 4362 250100</span></li>
+            <li><i class="bi bi-envelope"></i> contact@greenroots.org</li>
+            <li><i class="bi bi-clock"></i> Mon–Sat: 8:00 AM – 6:00 PM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 GreenRoots Producer Company. All rights reserved.</span>
+        <span><a href="#">Privacy Policy</a> · <a href="#">Terms &amp; Conditions</a> · <a href="#">Farmer Bylaws</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <button id="toTop" class="to-top" aria-label="Back to top of page"><i class="bi bi-arrow-up"></i></button>
+
+  <!-- Success Notification Modal -->
+  <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="sm-t" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-center p-4 border-0 shadow-lg">
+        <div class="ok-ring mx-auto mb-3"><i class="bi bi-check-lg fs-1 text-success"></i></div>
+        <h2 id="sm-t" class="h4">Enquiry Submitted!</h2>
+        <p id="successMsg" class="text-muted">Your product enquiry was received. We will contact you shortly.</p>
+        <button class="btn btn-fpc" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/validation.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/products.js"></script>
+</body>
+</html>
