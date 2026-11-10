@@ -95,6 +95,14 @@
   color: var(--accent);
 }
 
+[data-theme="dark"] .dropdown-item.active:hover,
+[data-theme="dark"] .dropdown-item.active:focus,
+[data-theme="dark"] .dropdown-item:active:hover,
+[data-theme="dark"] .dropdown-item:active:focus {
+  background-color: #245C36 !important;
+  color: #FFFFFF !important;
+}
+
 [data-theme="dark"] .hero-curve-bottom path {
   fill: var(--bg);
 }

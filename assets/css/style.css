@@ -468,6 +468,14 @@ img, video {
   color: var(--accent) !important;
 }
 
+.dropdown-item.active:hover,
+.dropdown-item.active:focus,
+.dropdown-item:active:hover,
+.dropdown-item:active:focus {
+  background: var(--primary-dark) !important;
+  color: #FFFFFF !important;
+}
+
 /* Desktop Hover Dropdown */
 @media (min-width: 1200px) {
   .navbar-nav .dropdown:hover > .fpc-dd {
@@ -497,7 +505,7 @@ button.icon-btn,
   border: 1px solid var(--border) !important;
   background: var(--surface) !important;
   color: var(--text) !important;
-  display: inline-flex !important;
+  display: inline-flex;
   align-items: center !important;
   justify-content: center !important;
   padding: 0 !important;

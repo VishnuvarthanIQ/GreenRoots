@@ -224,7 +224,6 @@
     min-width: 36px !important;
     min-height: 36px !important;
     padding: 0 !important;
-    display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
   }
