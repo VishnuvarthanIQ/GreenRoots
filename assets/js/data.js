@@ -417,6 +417,26 @@ window.FPC = {
       "quality": "99.9% Purity Sortexed",
       "origin": "Thiruvannamalai",
       "img": "assets/img/products/sesame-seeds.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Green Cardamom Pods",
+      "cat": "Spices",
+      "desc": "Aromatic 8mm bold whole green cardamom pods shade-dried to preserve sweet essential oils.",
+      "qty": 450,
+      "quality": "8mm Bold Alleppey",
+      "origin": "Idukki Hills",
+      "img": "assets/img/products/cardamom.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Desi Chickpeas (Chana)",
+      "cat": "Pulses",
+      "desc": "Protein-rich whole brown desi chickpeas stone-cleaned and graded for flour milling and dal.",
+      "qty": 1550,
+      "quality": "Grade A Bold",
+      "origin": "Coimbatore Belt",
+      "img": "assets/img/products/chickpeas.jpg"
     }
   ],
   "cats": [

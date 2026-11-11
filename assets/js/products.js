@@ -40,24 +40,24 @@
 
     g.innerHTML = filtered.map(function (p) {
       return (
-        '<div class="col-sm-6 col-lg-3 reveal in">' +
+        '<div class="fcard-col reveal in">' +
           '<article class="fcard prod-card h-100">' +
             '<div class="thumb">' +
               '<img loading="lazy" src="' + p.img + '" alt="' + p.name + ' – ' + p.cat + '">' +
             '</div>' +
             '<div class="body">' +
-              '<div class="d-flex justify-content-between align-items-center mb-1">' +
+              '<div class="prod-meta">' +
                 '<span class="chip mb-0">' + p.cat + '</span>' +
-                '<small class="text-muted"><i class="bi bi-geo-alt"></i> ' + (p.origin || 'Farm Direct') + '</small>' +
+                '<small class="prod-origin text-muted"><i class="bi bi-geo-alt" aria-hidden="true"></i> ' + (p.origin || 'Farm Direct') + '</small>' +
               '</div>' +
               '<h3>' + p.name + '</h3>' +
-              '<p class="small text-muted flex-grow-1 mb-3">' + p.desc + '</p>' +
-              '<div class="d-flex justify-content-between align-items-center mb-3 pt-2 border-top">' +
-                '<span class="small font-semibold"><i class="bi bi-patch-check text-success"></i> ' + p.quality + '</span>' +
-                '<span class="small text-muted"><i class="bi bi-box-seam"></i> ' + p.qty.toLocaleString() + ' kg</span>' +
+              '<p class="small text-muted mb-0">' + p.desc + '</p>' +
+              '<div class="d-flex justify-content-between align-items-center mb-1 pt-2 border-top">' +
+                '<span class="small font-semibold"><i class="bi bi-patch-check text-success" aria-hidden="true"></i> ' + p.quality + '</span>' +
+                '<span class="small text-muted"><i class="bi bi-box-seam" aria-hidden="true"></i> ' + p.qty.toLocaleString() + ' kg</span>' +
               '</div>' +
               '<button class="btn btn-fpc btn-sm w-100" data-enq="' + p.name + '">' +
-                '<i class="bi bi-envelope"></i> Enquire Now' +
+                '<i class="bi bi-envelope" aria-hidden="true"></i> Enquire Now' +
               '</button>' +
             '</div>' +
           '</article>' +

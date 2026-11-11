@@ -249,13 +249,13 @@
       }
       svSteps.innerHTML = steps.map(function (x, i) {
         return (
-          '<div class="col-md-6 col-lg reveal in">' +
-            '<div class="fcard icard h-100 text-center">' +
-              '<span class="step-num mx-auto">' + (i + 1) + '</span>' +
+          '<article class="fcard icard sv-step-card reveal in">' +
+            '<span class="step-num" aria-hidden="true">' + (i + 1) + '</span>' +
+            '<div class="sv-step-body">' +
               '<h3>' + x[0] + '</h3>' +
               '<p class="small muted mb-0">' + x[1] + '</p>' +
             '</div>' +
-          '</div>'
+          '</article>'
         );
       }).join('');
     }

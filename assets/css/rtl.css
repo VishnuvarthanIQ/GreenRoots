@@ -3,42 +3,10 @@
    ========================================================================== */
 
 [dir="rtl"] {
-  text-align: right;
+  text-align: start;
 }
 
 [dir="rtl"] .flip {
   transform: scaleX(-1);
   display: inline-block;
-}
-
-[dir="rtl"] .ticks li {
-  padding-inline-start: 0;
-  padding-inline-end: 2rem;
-}
-
-[dir="rtl"] .ticks li::before {
-  inset-inline-start: auto;
-  inset-inline-end: 0;
-}
-
-[dir="rtl"] .timeline {
-  border-inline-start: 0;
-  border-inline-end: 3px solid var(--accent);
-  padding-inline-start: 0;
-  padding-inline-end: 2rem;
-}
-
-[dir="rtl"] .tl-item::before {
-  inset-inline-start: auto;
-  inset-inline-end: calc(-2rem - 9px);
-}
-
-[dir="rtl"] .site-footer h3::after {
-  inset-inline-start: auto;
-  inset-inline-end: 0;
-}
-
-[dir="rtl"] .site-footer a:hover {
-  padding-inline-start: 0;
-  padding-inline-end: 4px;
 }

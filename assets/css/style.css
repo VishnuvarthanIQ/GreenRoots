@@ -46,6 +46,7 @@ body {
   color: var(--text);
   line-height: 1.7;
   overflow-x: hidden;
+  overflow-x: clip;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   transition: background-color 0.35s ease, color 0.35s ease;
@@ -168,7 +169,9 @@ img, video {
 .eyebrow {
   display: inline-flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 0.4rem;
+  max-width: 100%;
   font-size: 0.8rem;
   letter-spacing: 0.16em;
   font-weight: 800;
@@ -206,6 +209,7 @@ img, video {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1.25rem;
 }
 
 /* Guarantee visibility of navbar-collapse (prevent Tailwind .collapse visibility:collapse conflict) */
@@ -215,6 +219,14 @@ img, video {
 }
 
 @media (min-width: 1200px) {
+  .site-header .container {
+    padding-inline: 1.25rem;
+  }
+
+  .site-header .navbar {
+    gap: 1rem;
+  }
+
   .navbar-expand-xl .navbar-collapse,
   .site-header .navbar-collapse {
     display: flex !important;
@@ -233,6 +245,40 @@ img, video {
   .navbar-expand-xl .navbar-nav {
     background: transparent !important;
     background-color: transparent !important;
+    gap: 0.05rem;
+  }
+
+  .site-header .nav-link {
+    font-size: 0.86rem;
+    padding: 0.48rem 0.5rem !important;
+  }
+
+  .site-header .nav-link.active::after {
+    inset-inline: 0.5rem;
+  }
+}
+
+@media (min-width: 1360px) {
+  .site-header .container {
+    padding-inline: clamp(1rem, 3.5vw, 2.5rem);
+  }
+
+  .site-header .navbar {
+    gap: 2rem;
+  }
+
+  .site-header .navbar-nav,
+  .navbar-expand-xl .navbar-nav {
+    gap: 0.3rem;
+  }
+
+  .site-header .nav-link {
+    font-size: 0.94rem;
+    padding: 0.5rem 0.75rem !important;
+  }
+
+  .site-header .nav-link.active::after {
+    inset-inline: 0.75rem;
   }
 }
 
@@ -286,6 +332,7 @@ img, video {
   color: var(--primary);
   text-decoration: none;
   margin: 0;
+  flex-shrink: 0;
   transition: transform 0.25s ease;
 }
 
@@ -491,6 +538,17 @@ img, video {
   display: flex;
   align-items: center;
   gap: 0.55rem;
+  flex-shrink: 0;
+}
+
+.header-actions .btn-accent {
+  height: 40px;
+  padding: 0 1.15rem;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  line-height: 1;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .icon-btn,
@@ -738,6 +796,8 @@ article .chip,
 .hero-full {
   position: relative;
   min-height: 92vh;
+  min-height: 92dvh;
+  padding-block: clamp(2.5rem, 5vw, 4rem) clamp(5.5rem, 8vw, 6.5rem);
   display: flex;
   align-items: center;
   color: #ffffff;
@@ -1186,6 +1246,10 @@ article .chip,
   align-items: center;
 }
 
+.split-content > * {
+  min-width: 0;
+}
+
 .split-content.reverse {
   direction: rtl;
 }
@@ -1480,6 +1544,354 @@ article .chip,
 .icard:hover > i {
   transform: scale(1.12);
   color: var(--primary);
+}
+
+/* Service Details: Sticky Sidebar & Balanced Workflow Steps */
+@media (min-width: 992px) {
+  .sticky-side {
+    position: sticky;
+    top: 96px;
+  }
+}
+
+.sv-steps-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.sv-step-card {
+  padding: 1.35rem 1.4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.1rem;
+  text-align: start;
+}
+
+.sv-step-card .step-num {
+  width: 46px;
+  height: 46px;
+  font-size: 1.15rem;
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+
+.sv-step-body h3 {
+  font-size: 1.08rem;
+  margin-bottom: 0.3rem;
+}
+
+@media (min-width: 768px) {
+  .sv-steps-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.1rem;
+  }
+
+  .sv-step-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Quality Framework 3-Pillar Grid with Aligned Tracks via Subgrid */
+.quality-framework-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.quality-framework-grid .icard {
+  padding: 2rem 1.35rem;
+  align-items: center;
+  row-gap: 0.75rem;
+}
+
+.quality-framework-grid .icard > i {
+  line-height: 1;
+  margin-bottom: 0.15rem;
+}
+
+.quality-framework-grid .icard h3 {
+  font-size: clamp(1.02rem, 1.25vw, 1.125rem);
+  line-height: 1.3;
+  margin-bottom: 0;
+  text-box: trim-both cap alphabetic;
+  text-wrap: balance;
+}
+
+.quality-framework-grid .icard p {
+  margin-bottom: 0;
+  text-wrap: pretty;
+}
+
+/* Aligned Card Grids (Product, Service & Catalogue Cards) */
+.fcard-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.fcard-grid .fcard .body {
+  row-gap: 0.75rem;
+}
+
+.fcard-grid .fcard .body > .chip {
+  margin-bottom: 0;
+}
+
+.fcard-grid .fcard .body > .sico {
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.fcard-grid .fcard .body > h3 {
+  font-size: clamp(1.04rem, 1.15vw, 1.14rem);
+  line-height: 1.3;
+  margin-bottom: 0;
+  text-box: trim-both cap alphabetic;
+  text-wrap: balance;
+}
+
+.fcard-grid .fcard .body > p {
+  margin-bottom: 0.25rem !important;
+  text-wrap: pretty;
+}
+
+.fcard-grid .fcard .body > .link-arrow {
+  justify-self: start;
+}
+
+.prod-meta {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.45rem;
+  min-width: 0;
+  width: 100%;
+}
+
+.fcard-grid .fcard .body .prod-meta .chip {
+  font-size: 0.72rem !important;
+  padding: 0.2rem 0.55rem !important;
+  line-height: 1.2 !important;
+  margin-bottom: 0 !important;
+  margin-right: 0 !important;
+  flex-shrink: 0;
+}
+
+.prod-origin {
+  font-size: 0.74rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+.fcard-grid--6 .fcard .body {
+  padding: 1.25rem;
+}
+
+@media (min-width: 576px) {
+  .fcard-grid--4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .fcard-grid--4 > .fcard-col,
+  .fcard-grid--4 .fcard {
+    grid-row: span 5;
+    display: grid;
+    grid-template-rows: auto auto auto 1fr auto;
+    grid-template-rows: subgrid;
+    row-gap: 0;
+  }
+
+  .fcard-grid--4 .fcard > .thumb {
+    grid-row: 1;
+  }
+
+  .fcard-grid--4 .fcard > .body {
+    grid-row: 2 / span 4;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: subgrid;
+    row-gap: 0.75rem;
+    align-items: start;
+    align-content: stretch;
+  }
+
+  .fcard-grid--6 > .fcard-col,
+  .fcard-grid--6 .fcard {
+    grid-row: span 6;
+    grid-template-rows: auto auto auto 1fr auto auto;
+    grid-template-rows: subgrid;
+  }
+
+  .fcard-grid--6 .fcard > .body {
+    grid-row: 2 / span 5;
+    grid-template-rows: auto auto 1fr auto auto;
+    grid-template-rows: subgrid;
+    row-gap: 0.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .fcard-grid--services {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .fcard-grid--services > .fcard-col,
+  .fcard-grid--services .fcard {
+    grid-row: span 5;
+    display: grid;
+    grid-template-rows: auto auto auto 1fr auto;
+    grid-template-rows: subgrid;
+    row-gap: 0;
+  }
+
+  .fcard-grid--services .fcard > .thumb {
+    grid-row: 1;
+  }
+
+  .fcard-grid--services .fcard > .body {
+    grid-row: 2 / span 4;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: subgrid;
+    row-gap: 0.75rem;
+    align-items: start;
+    align-content: stretch;
+  }
+}
+
+@media (min-width: 992px) {
+  .fcard-grid--4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .fcard-grid--services {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .fcard-grid--services {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* Products Page: Quality Control Media Matched to Text Column Height */
+.quality-control-media {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  position: relative;
+}
+
+.quality-control-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .quality-control-media {
+    aspect-ratio: auto;
+    flex: 1 1 auto;
+    min-height: 100%;
+  }
+
+  .quality-control-media img {
+    position: absolute;
+    inset: 0;
+  }
+}
+
+/* About Page: Vision 2030 Grid with Aligned Phase Badges, Titles, Copy & Checklists */
+.vision-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.vision-grid .vision-card > .badge {
+  justify-self: start;
+  margin-bottom: 0.25rem !important;
+}
+
+.vision-grid .vision-card > h3 {
+  font-size: clamp(1.04rem, 1.15vw, 1.15rem);
+  line-height: 1.3;
+  margin-bottom: 0 !important;
+  text-box: trim-both cap alphabetic;
+  text-wrap: balance;
+}
+
+.vision-grid .vision-card > p {
+  margin-bottom: 0.35rem !important;
+  text-wrap: pretty;
+}
+
+.vision-grid .vision-card > ul {
+  margin-bottom: 0 !important;
+  align-self: start;
+}
+
+@media (min-width: 768px) {
+  .vision-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .vision-grid > .vision-col {
+    grid-row: span 4;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: subgrid;
+    row-gap: 0;
+  }
+
+  .vision-grid .vision-card {
+    grid-row: span 4;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: subgrid;
+    row-gap: 0.65rem;
+    align-items: start;
+    align-content: stretch;
+  }
+}
+
+@media (min-width: 992px) {
+  .vision-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .quality-framework-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .quality-framework-grid > .qf-item {
+    grid-row: span 3;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    grid-template-rows: subgrid;
+    row-gap: 0;
+  }
+
+  .quality-framework-grid .icard {
+    grid-row: span 3;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    grid-template-rows: subgrid;
+    justify-items: center;
+    align-items: start;
+    align-content: start;
+    row-gap: 0.75rem;
+  }
 }
 
 /* Service Category Spotlight Card */
@@ -2540,6 +2952,7 @@ article .chip,
   height: 100%;
   object-fit: cover;
   object-position: top center !important;
+  transform-origin: center top;
   transition: transform 0.45s ease;
   display: block;
 }
